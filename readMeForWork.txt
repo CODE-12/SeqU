@@ -2,7 +2,7 @@ Hello People :)
 
 this files used for split TASKS And write description Need To Read & write The Changes Happen in the project
 
-Be Focus And Active :) HAVe FUN Babys
+Be Focus And Active :) HAVe FUN ktkit
 
 folder files:
     -jsSrc: Contains JavaScript files
@@ -20,18 +20,18 @@ files description:
 
 TASKS:
 
-    Saleh:-
+    Saleh:-Chapter One
+    - Create functions for rules
     -
     -
-    -
-    Eltayeb:-
-    -
+    Eltayeb:-Chapter Two
+    - Create functions for rules
     -
     -
     Rami:-
-    -
-    -
-    -
+    - 
+    - 
+    - 
     Yousef:-
     -
     -
