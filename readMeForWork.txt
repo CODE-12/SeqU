@@ -25,7 +25,7 @@ TASKS:
     -
     -
     Eltayeb:-Chapter Two
-    - Create functions for rules
+    - Create functions for unit2-rules(done)
     -
     -
     Rami:-
