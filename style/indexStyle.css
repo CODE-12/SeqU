@@ -1,4 +1,34 @@
 
+a:link {
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+     text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+footer{
+   background-color:   #333333;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}
+td:hover{
+    background-color: gray;
+}
 .footer {
   position: absolute;
   right: 0;
@@ -23,7 +53,7 @@ body, html {
 
 .parallax {
     /* The image used */
-    background-image: url('http://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png');
+    background-image: url(../img/Website-Design-Background.png);
 
     /* Full height */
     height: 100%; 
