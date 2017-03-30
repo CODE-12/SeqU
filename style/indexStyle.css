@@ -7,7 +7,6 @@ a:visited{
      text-decoration: none;
 }
 a:hover{
-    color: red;
 }
 footer{
    background-color:   #333333;
@@ -27,7 +26,9 @@ footer p {
     line-height: 100%;
 }
 td:hover{
-    background-color: gray;
+    background-color:rgba(192,192,192,0.3);
+    border-radius: 100px;
+   transition: 1.5s;
 }
 .footer {
   position: absolute;
