@@ -3,9 +3,14 @@ a:link {
     text-decoration: none;
 }
 a:visited{
-    color: white;
+    color: #ffffff;
      text-decoration: none;
 }
+
+.text-color-white {
+    color: #ffffff;
+}
+
 a:hover{
 }
 footer{
@@ -26,9 +31,10 @@ footer p {
     line-height: 100%;
 }
 td:hover{
+    cursor: pointer;
     background-color:rgba(192,192,192,0.3);
     border-radius: 100px;
-   transition: 1.5s;
+   transition: 0.8s;
 }
 .footer {
   position: absolute;
