@@ -1,5 +1,5 @@
 .color-white{
-    color: black:
+    color:white
 }
 a:link {
     text-decoration: none;
@@ -24,7 +24,7 @@ a:hover {
 
 .hg {
     /* The image used */
-    background-image: url(../img/mac_physics_wallpaper-2560x1600.jpg);
+    background-image: url(../img/dna-science-biology-chemistry.jpg);
     /* Full height */
     height: 100%;
     /* Create the parallax scrolling effect */
