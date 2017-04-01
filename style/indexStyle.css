@@ -3,17 +3,17 @@
 a:link {
     text-decoration: none;
 }
-a:visited{
+
+a:visited {
     color: #ffffff;
-     text-decoration: none;
+    text-decoration: none;
 }
+
 .text-color-white {
     color: #ffffff;
 }
 
-a:hover{
-}
-footer{
+a:hover {}footer{
    background-color:   #333333;
     
     position: fixed;
