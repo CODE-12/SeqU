@@ -56,63 +56,33 @@
         </div>
     </div>
     <!--NAVBAR END-->
+    <div class="container">
+        <div class="row">
+            <h1 class="center">اختار المقرر</h1>
+        </div>
 
-    <br>
-
-    <h1 class="center">اختار المقرر </h1>
-
-    <br>
-
-    <div>
-
-        <h3 class="center"> الماده </h3>
-
-        <div class="col-md-5">
-            <h3 class="center"> الماده </h3>
-
+        <div class="row">
+            <h3 class="center">:الماده</h3>
             <select id="selectbasic" name="selectbasic" class="form-control">
-                
-      <option value="1" disabled >كيمياء 1</option>
-      <option value="2" disabled >كيمياء 2</option>
-      <option value="3" disabled >كيمياء 3</option>
-      <option value="4" selected>كيمياء 4</option>
-                
-    </select>
-
+                <option value="1" disabled >كيمياء 1</option>
+                <option value="2" disabled >كيمياء 2</option>
+                <option value="3" disabled >كيمياء 3</option>
+                <option value="4" selected>كيمياء 4</option>            
+            </select>
         </div>
-
+        <div class="row">
+            <h3 class="center">:اختر الفصل</h3>
+            <select id="selectPart" class="form-control col-lg-11 col-md-11 text-center">
+                <option value="1" selected >الفصل الاول</option>
+                <option value="2">الفصل الثاني</option>
+                <option value="3">الفصل الثالث</option>
+            </select>
+            <button class="btn btn-default col-lg-1 col-md-1">ابحث</button>
+        </div>
     </div>
 
-    <div class="col-lg-4 col-md-4"> </div>
-
-    <div>
-
-
-
-        <div class="col-md-4 col-lg-4">
-            <h3 class="center"> اختر الفصل </h3>
-
-            <select>
-                
-      <option value="1" selected >الفصل الاول</option>
-      <option value="2">الفصل الثاني</option>
-      <option value="3">الفصل الثالث</option>
-                
-    </select>
-
-        </div>
-
-        <div class="col-lg-4 col-md-4"></div>
-
-    </div>
-
-
-    <br>
-
-    <center>
-        <button class="btn btn-default disabled
-">ابحث</button>
-    </center>
+    <br />
+    
     <script src="jsSrc/jquery-3.2.0.slim.min.js"></script>
     <script src="jsSrc/index.js"></script>
 </body>
