@@ -1,36 +1,14 @@
-body{
-    height:inherit;
-}
-.color-white {
+.color-white{
     color: white;
 }
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    color: pink;
-    text-decoration: none;
-}
-
-.text-color-white {
-    color: pink;
-}
-
-a:hover {
-    color: blue;
-}
-
-.center {
+.center{
     text-align: center;
 }
-
 .hg {
     /* The image used */
-    background-image: url(../img/j0PLI7n.jpg);
+    background-image: url(../img/PHYSICS_equation_mathematics_math_formula_science_4000x2962.jpg);
     /* Full height */
-    height: 100%;
+    height:auto;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
