@@ -1,9 +1,9 @@
 function Poyle()
 {
-     var P1 =parseFloat(document.getElementById("").value);
-    var P2 =parseFloat(document.getElementById("").value);
-    var V1 =parseFloat(document.getElementById("").value);
-    var V2 =parseFloat(document.getElementById("").value);
+     var P1 =parseFloat(document.getElementById("p1").value);
+    var P2 =parseFloat(document.getElementById("p2").value);
+    var V1 =parseFloat(document.getElementById("v1").value);
+    var V2 =parseFloat(document.getElementById("v2").value);
     var reslt ;
      var tips ;
     if(P1=="0.0")
@@ -16,8 +16,8 @@ function Poyle()
             tips  += "<br />";
             tips  += "P1 = "+"("+V2+" / "+V1+") "+" * "+P2;
             reslt += "<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt; 
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
     else if(P2=="0.0")
         {
@@ -29,8 +29,8 @@ function Poyle()
             tips  += "<br />";
             tips  += "P2 = "+"("+V1+" / "+V2+") "+" * "+P1;
             reslt += "<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt; 
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
     else if(V1=="0.0")
         {
@@ -42,8 +42,8 @@ function Poyle()
             tips  += "<br />";
             tips  += "V1 = "+"("+P2+" / "+P1+") "+" * "+V2;
             reslt += "<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt; 
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
             
         }
     
@@ -57,8 +57,8 @@ function Poyle()
             tips  += "<br />";
             tips  += "V1 = "+"("+P1+" / "+P2+") "+" * "+V1;
             reslt += "<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt; 
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
     
     
@@ -66,10 +66,10 @@ function Poyle()
 }
 function Sharles()
 {
-     var T1 =parseFloat(document.getElementById("").value);
-    var T2 =parseFloat(document.getElementById("").value);
-    var V1 =parseFloat(document.getElementById("").value);
-    var V2 =parseFloat(document.getElementById("").value);
+     var T1 =parseFloat(document.getElementById("t1").value);
+    var T2 =parseFloat(document.getElementById("t2").value);
+    var V1 =parseFloat(document.getElementById("v3").value);
+    var V2 =parseFloat(document.getElementById("v4").value);
     var reslt ;
      var tips ;
     if(T1 == "0.0")
@@ -80,8 +80,8 @@ function Sharles()
         tips+="<br /";
         tips+="T1 = (V1 * T2) / V2 "+"<br />";
         tips+= "T1 = "+"("+V1+" * "+ T2+")  / "+V2;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+          document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         
     }
     else if(T2 == "0.0")
@@ -92,9 +92,8 @@ function Sharles()
         tips+="<br /";
         tips+="T1 = (V2 * T1) / V1 "+"<br />";
         tips+= "T1 = "+"("+V2+" * "+ T1+")  / "+V1;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
-        
+          document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
     }
     else if(V1 == "0.0")
     {
@@ -104,8 +103,8 @@ function Sharles()
         tips+="<br /";
         tips+="T1 = (V2 * T1) / T2 "+"<br />";
         tips+= "T1 = "+"("+V2+" * "+ T1+")  / "+T2;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+          document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         
     }
     else if(V2 == "0.0")
@@ -116,18 +115,18 @@ function Sharles()
         tips+="<br /";
         tips+="T1 = (V1 * T2) / T1 "+"<br />";
         tips+= "T1 = "+"("+V1+" * "+ T2+")  / "+T1;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+         document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         
     }
      
 }
 function Lusac()
 {
-    var P1 =parseFloat(document.getElementById("").value);
-    var P2 =parseFloat(document.getElementById("").value);
-    var T1 =parseFloat(document.getElementById("").value);
-    var T2 =parseFloat(document.getElementById("").value);
+    var P1 =parseFloat(document.getElementById("P1").value);
+    var P2 =parseFloat(document.getElementById("P2").value);
+    var T1 =parseFloat(document.getElementById("T1").value);
+    var T2 =parseFloat(document.getElementById("T2").value);
     var reslt ;
      var tips ;
     if(T1 == "0.0")
@@ -138,9 +137,8 @@ function Lusac()
         tips+="<br /";
         tips+="T1 = (P1 * T2) / P2 "+"<br />";
         tips+= "T1 = "+"("+P1+" * "+ T2+")  / "+P2;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
-        
+        document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
     }
     else if(T2 == "0.0")
     {
@@ -150,8 +148,8 @@ function Lusac()
         tips+="<br /";
         tips+="T1 = (P2 * T1) / P1 "+"<br />";
         tips+= "T1 = "+"("+P2+" * "+ T1+")  / "+P1;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+         document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         
     }
     else if(P1 == "0.0")
@@ -162,8 +160,8 @@ function Lusac()
         tips+="<br /";
         tips+="T1 = (P2 * T1) / T2 "+"<br />";
         tips+= "T1 = "+"("+P2+" * "+ T1+")  / "+T2;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+         document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         
     }
     else if(P2 == "0.0")
@@ -174,8 +172,8 @@ function Lusac()
         tips+="<br /";
         tips+="T1 = (P1 * T2) / T1 "+"<br />";
         tips+= "T1 = "+"("+P1+" * "+ T2+")  / "+T1;
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+         document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         
     }
     
@@ -183,12 +181,12 @@ function Lusac()
     
 }
 function publicc()
-{   var P1 =parseFloat(document.getElementById("").value);
-    var P2 =parseFloat(document.getElementById("").value);
-    var V1 =parseFloat(document.getElementById("").value);
-    var V2 =parseFloat(document.getElementById("").value);
-    var T1 =parseFloat(document.getElementById("").value);
-    var T2 =parseFloat(document.getElementById("").value);
+{   var P1 =parseFloat(document.getElementById("pp1").value);
+    var P2 =parseFloat(document.getElementById("pp2").value);
+    var V1 =parseFloat(document.getElementById("vv1").value);
+    var V2 =parseFloat(document.getElementById("vv2").value);
+    var T1 =parseFloat(document.getElementById("tt1").value);
+    var T2 =parseFloat(document.getElementById("tt2").value);
     var reslt;
     var tips;
  
@@ -200,8 +198,8 @@ function publicc()
          tips+="<br /";
          tips+="T1 = P2 * (V2/ V1) * (T1 / T2) "+"<br />";
          tips+ "P1 = "+P2+" * "+" ( "+V2+" / "+ V1+" ) * " +" ( "+T1+ " / "+T2+" ) ";
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+       document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
           
      }
  else if(V1 == "0.0")
@@ -212,8 +210,8 @@ function publicc()
          tips+="<br /";
          tips+="V1 = V2 * (P2 / P1) * (T1 / T2) "+"<br />";
          tips+="T1 = "+V2+" * "+" ( "+P2+" / "+P1+")  *  "+" ( "+T1+" / "+T2+" ) ";
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+         document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
           
      }
  else if(T1 == "0.0")
@@ -224,8 +222,8 @@ function publicc()
          tips+="<br /";
          tips+="T1 =T2 * (P1 /P2) * (V1 / V2) "+"<br />";
          tips+="T1 = "+T2+" * "+" ( "+P1+" / "+P2+" ) * "+" ( "+V1+" / "+V2+" ) ";
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+        document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
      }
  else if(P2 == "0.0")
      {
@@ -235,9 +233,8 @@ function publicc()
          tips+="<br /";
          tips+="P2 = P1 * (V1/ V2) * (T2 / T1) "+"<br />";
          tips+= "P2 = "+P1+" * "+" ( "+V1+" / "+ V2+" ) * " +" ( "+T2+ " / "+ T1+" ) ";
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
-          
+        document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
      }
  else if(V2 == "0.0")
      {
@@ -247,8 +244,8 @@ function publicc()
          tips+="<br /";
          tips+="V2 = V1 * (P1 / P2) * (T2 / T1) "+"<br />";
          tips+= "V2 = "+V1 +" * "+" ( "+P1+" / "+ P2+")  *  "+" ( "+T2+" / " +T1+" ) ";
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+          document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
           
      }
  else if(T2 == "0.0")
@@ -259,8 +256,8 @@ function publicc()
          tips+="<br /";
          tips+="T1 =T1 * (P2 /P1) * (V2 / V1) "+"<br />";
          tips+="T1 = "+T1+" * "+" ( "+P2+" / "+P1+" ) * "+" ( "+V2+" / "+V1+" ) ";
-         document.getElementById("").innerHTML= tips;
-         document.getElementById("").innerHTML= reslt; 
+         document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
      }
     
     
@@ -282,9 +279,8 @@ function STPP()
             tips = "m = n * M"+"<br />";
             tips += "m = "+n+" * "+M;
             tips+= "<br /";
-             document.getElementById("").innerHTML= tips;
-             document.getElementById("").innerHTML= reslt; 
-            
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
     else if (n == "0.0")
         {   reslt =m / M;
@@ -292,8 +288,8 @@ function STPP()
             tips = "n = m / M"+"<br />";
             tips += "m = "+m+" / "+M;
             tips+= "<br /";
-             document.getElementById("").innerHTML= tips;
-             document.getElementById("").innerHTML= reslt; 
+              document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
     else if (M == "0.0")
         {   reslt =m / n;
@@ -301,18 +297,18 @@ function STPP()
             tips = "M = m / n"+"<br />";
             tips += "M = "+m+" / "+n;
             tips+= "<br /";
-             document.getElementById("").innerHTML= tips;
-             document.getElementById("").innerHTML= reslt; 
+             document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
              
     
 }
 function perfect()
 {
-    var P =parseFloat(document.getElementById("").value);
-    var V =parseFloat(document.getElementById("").value);
-    var n =parseFloat(document.getElementById("").value);
-    var T =parseFloat(document.getElementById("").value);
+    var P =parseFloat(document.getElementById("P").value);
+    var V =parseFloat(document.getElementById("V").value);
+    var n =parseFloat(document.getElementById("n").value);
+    var T =parseFloat(document.getElementById("T").value);
     var R = 0.0821;
     var reslt;
     var tips; 
@@ -323,9 +319,8 @@ function perfect()
         tips += "P = "+n+"*"+R+"*"+T+" / "+V;
         reslt = (n*R*T) / (V);
         reslt +="<br />";
-        document.getElementById("").innerHTML= tips;
-        document.getElementById("").innerHTML= reslt; 
-       
+       document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
        }
     else if( V == "0.0")
        { 
@@ -334,8 +329,8 @@ function perfect()
         tips += "V = "+n+"*"+R+"*"+T+" / "+V;
         reslt = (n*R*T) / (P);
         reslt +="<br />";
-        document.getElementById("").innerHTML= tips;
-        document.getElementById("").innerHTML= reslt; 
+    document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
        }
      else if( n == "0.0")
        { 
@@ -344,8 +339,8 @@ function perfect()
         tips += "n = "+P+" * "+V+" / "+R+" * "+T;
         reslt = (P*V) / (R*T);
         reslt ="<br />";
-        document.getElementById("").innerHTML= tips;
-        document.getElementById("").innerHTML= reslt; 
+     document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
        }
     else if( T == "0.0")
        { 
@@ -354,17 +349,17 @@ function perfect()
         tips += "n = "+P+" * "+V+" / "+R+" * "+n;
         reslt = (P*V) / (R*n);
         reslt +="<br />";
-        document.getElementById("").innerHTML= tips;
-        document.getElementById("").innerHTML= reslt;
+        document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
        }
     
 }
 function Density()
 {
-    var P =parseFloat(document.getElementById("").value);
-    var M =parseFloat(document.getElementById("").value);
-    var D =parseFloat(document.getElementById("").value);
-    var T =parseFloat(document.getElementById("").value);
+    var P =parseFloat(document.getElementById("PP").value);
+    var M =parseFloat(document.getElementById("MM").value);
+    var D =parseFloat(document.getElementById("D").value);
+    var T =parseFloat(document.getElementById("TT").value);
     var R = 0.0821;
     var reslt;
     var tips; 
@@ -373,30 +368,30 @@ function Density()
         {
             tips= "D = MP / RT"+"<br />"+"D = "+M+" * "+P+" / "+R+" * "+T;
             reslt = (M*P)/(R*T)+"<br /";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;        
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
             
         }
     else  if (T == "0.0" )
         {
             tips= "D = MP / RT"+"<br />"+"T = MP / RD "+"<br />"+"T = "+M+" * "+P+" / "+R+" * "+D;
             reslt = (M*P)/(R*D)+"<br /";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;         
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
       else  if (M == "0.0" )
         {
             tips= "D = MP / RT"+"<br />"+"M = RTD / P "+"<br />"+"M = "+R+" * "+T+"*"+D+" / "+P;
             reslt = (R*T*D)/(P)+"<br /";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;         
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
      else  if (P== "0.0" )
         {
             tips= "D = MP / RT"+"<br />"+"P = RTD / m "+"<br />"+"P = "+R+" * "+T+"*"+D+" / "+M;
             reslt = (R*T*D)/(M)+"<br /";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;         
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
         }
     
     
@@ -405,11 +400,11 @@ function Density()
     
 }
 function Molarr()
-{   var M =parseFloat(document.getElementById("").value);
-    var P =parseFloat(document.getElementById("").value);
-    var m =parseFloat(document.getElementById("").value);
-    var V =parseFloat(document.getElementById("").value);
-    var T =parseFloat(document.getElementById("").value);
+{   var M =parseFloat(document.getElementById("M").value);
+    var P =parseFloat(document.getElementById("p").value);
+    var m =parseFloat(document.getElementById("m").value);
+    var V =parseFloat(document.getElementById("V").value);
+    var T =parseFloat(document.getElementById("T").value);
     var R = 0.0821;
     var reslt;
     var tips;
@@ -417,36 +412,36 @@ function Molarr()
      {
          tips= "M = mRT / PV"+"<br />"+"M = "+m+" * "+R+" * "T+" / "+P+" * "+V+"<br />";
          reslt =(m*R*T)/(P*V)+"<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;
-     }
+             document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
  else if(P == "0.0")
      {
          tips= "M = mRT / PV"+"<br />"+"P = mRT / MV "+"<br />"+"P = "+m+" * "+R+" * "T+" / "+M+" * "+V+"<br />";
          reslt =(m*R*T)/(M*V)+"<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;
+           document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
      }
  else if(V == "0.0")
      {
          tips= "M = mRT / PV"+"<br />"+"V = mRT / MP "+"<br />"+"V = "+m+" * "+R+" * "T+" / "+M+" * "+P+"<br />";
          reslt =(m*R*T)/(P*M)+"<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
      }
  else if(m == "0.0")
      {
          tips= "M = mRT / PV"+"<br />"+"m = MPV / RT "+"<br />"+" m = "+M+" * "+P+" * "V+" / "+R+" * "+T+"<br />";
          reslt =(M*P*V)/(R*T)+"<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;
+           document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
      }
  else if(T == "0.0")
      {
          tips= "M = mRT / PV"+"<br />"+"T = MPV / Rm "+"<br />"+" T = "+M+" * "+P+" * "V+" / "+R+" * "+m+"<br />";
          reslt =(M*P*V)/(R*m)+"<br />";
-            document.getElementById("").innerHTML= tips;
-            document.getElementById("").innerHTML= reslt;
-    
+            document.getElementById("tips").innerHTML= tips;
+            document.getElementById("result").innerHTML= reslt; 
 }
+}
+ 
 }

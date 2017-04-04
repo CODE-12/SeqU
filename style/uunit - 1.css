@@ -1,4 +1,4 @@
-Mdi{ position: absolute;top:50%; right: 100px; width: 333px; height:300px;}
+Mdi{ position: relative;top:50%; right: 100px; width: 333px; height:300px;}
 
 .SeN-BC-re{ border: 1px solid #ff0000;}
 .SeN-BC-or{ border: 1px solid #ff9200;}
