@@ -1,0 +1,36 @@
+#Mdi{ position: relative;top:50%; right: 100px; width: 333px; height:300px;}
+
+.SeN-BC-re{ border: 1px solid #ff0000;}
+.SeN-BC-or{ border: 1px solid #ff9200;}
+.SeN-BC-yl{ border: 1px solid #fff900;}
+.SeN-BC-gre{ border: 1px solid #1ca700;}
+.SeN-BC-gra{ border: 1px solid #7e7e7e;}
+.SeN-BC-cy{ border: 1px solid #00d6de;}
+.SeN-BC-bl{ border: 1px solid #0090ff;}
+.SeN-BC-pu{ border: 1px solid #6d00de;}
+.SeN-BC-nel{ border: 1px solid #0024de;}
+.SeN-BC-bla{ border: 1px solid #000000;}
+.SeN-BC-wi{ border: 1px solid #ffffff;}
+
+.tex{ width: 30px; height: 10px;  }
+#result{ width:200px;height: 20px;position: absolute; bottom: 10px; left: 50px; background-color:#e3e8f2;}
+
+.buttom{position: absolute;top: 100px;left: 53px;  width: 210px; height: 18px; background-color:#e3e8f2; text-align: center; }
+.buttom:hover{background-color: rgb(100,100,100); color: white;}
+.tips{text-align: center; position: absolute;bottom:85px;left: 40%;}
+#res-div{position:absolute;left:30px;bottom: 10px; width: 250px; text-align: left; height:30px;}
+
+#sal-div{position: absolute; top: 40px; left: 100px; width: 300px;height: 40px;}
+#eq{position: absolute; top: 47px;left:155px;}
+
+/*pH = log [H],pOH = log [OH]*/
+#trkez{ position:absolute;top:65px;left: 203px;} 
+#ph{ position:absolute;top:65px;left: 113px;}
+#log{ position:absolute;top:47px;left: 173px;}
+
+
+/* kw = [OH] [H] , 14 = pH + pOH*/
+#kw{ position:absolute;top:65px;left: 113px;}
+#OH{ position:absolute;top:65px;left: 173px;}
+#H{ position:absolute;top:65px;left: 210px;} 
+#num{ position:absolute;top:45px;left: 113px;} 
