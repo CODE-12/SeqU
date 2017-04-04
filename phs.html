@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/Phs%20Css.css">
+    <script src="jsSrc/chapter-one.js"></script>
     <script type="text/javascript" src="jsSrc/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -73,8 +74,35 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body" dir="rtl">
+                    <center>
+                        P<sub>1</sub>
+                        <br>
+                        <input type="number" id="p1" placeholder=" ادخل القيمه">
+                        <br> V<sub>1</sub>
+                        <br>
+                        <input type="number" id="v1" placeholder="ادخل القيمه">
+                        <br> P<sub>2</sub>
+                        <br>
+                        <input type="number" id="p2" placeholder="ادخل القيمه">
+                        <br> V<sub>2</sub>
+                        <br>
+                        <input type="number" id="v2" placeholder="ادخل القيمه">
+                        <br> =
+                        <br>
+                        <button class="buttom" onclick="Poyle()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
 
-
+                        </div>
+                    </center>
                 </div>
             </div>
         </div>
@@ -88,8 +116,34 @@
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body" dir="rtl">
-
-
+                    <center>
+                        V<sub>1</sub>
+                        <br>
+                        <input type="number" id="v3" placeholder="ادخل القيمه">
+                        <br> T<sub>1</sub>
+                        <br>
+                        <input type="number" id="t1" placeholder="ادخل القيمه">
+                        <br> V<sub>2</sub>
+                        <br>
+                        <input type="number" id="v4" placeholder="ادخل القيمه">
+                        <br> T<sub>2</sub>
+                        <br>
+                        <input type="number" id="t2" placeholder="ادخل القيمه">
+                        <br> =
+                        <br>
+                        <button class="buttom" onclick="Sharles()">الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+                        </div>
+                    </center>
                 </div>
             </div>
         </div>
@@ -103,7 +157,34 @@
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body" dir="rtl">
-
+                    <center>
+                        P<sub>1</sub>
+                        <br>
+                        <input type="number" id="P1" placeholder="ادخل القيمه">
+                        <br> T<sub>1</sub>
+                        <br>
+                        <input type="number" id="T1" placeholder="ادخل القيمه">
+                        <br> P<sub>2</sub>
+                        <br>
+                        <input type="number" id="P2" placeholder="ادخل القيمه">
+                        <br> T<sub>2</sub>
+                        <br>
+                        <input type="number" id="T2" placeholder="ادخل القيمه">
+                        <br> =
+                        <br>
+                        <button class="buttom" onclick="Lusac()">الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+                        </div>
+                    </center>
                 </div>
             </div>
         </div>
@@ -117,8 +198,45 @@
             </div>
             <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading">
                 <div class="panel-body" dir="rtl">
-
-
+                    <center>
+                        P<sub>1</sub>
+                        <br>
+                        <input type="number" id="pp1" placeholder="ادخل القيمه">
+                        <br> V
+                        <sub>2</sub>
+                        <br>
+                        <input type="number" id="vv1" placeholder="ادخل القيمه">
+                        <br> T
+                        <sub>1</sub>
+                        <br>
+                        <input type="number" id="tt1" placeholder="ادخل القيمه">
+                        <br> P
+                        <sub>2</sub>
+                        <br>
+                        <input type="number" id="pp2" placeholder="ادخل القيمه">
+                        <br> V
+                        <sub>2</sub>
+                        <br>
+                        <input type="number" id="vv2" placeholder="ادخل القيمه">
+                        <br> T
+                        <sub>2</sub>
+                        <br>
+                        <input type="number" id="tt2" placeholder="ادخل القيمه">
+                        <br> =
+                        <br>
+                        <button class="buttom" onclick="publicc()">الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+                        </div>
+                    </center>
                 </div>
             </div>
         </div>
@@ -132,11 +250,127 @@
             </div>
             <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading">
                 <div class="panel-body" dir="rtl">
+                    <center>
+                         الثابت = <code>0.0821</code>
+                        <br>
+                        P
+                        <br>
+                        <input type="number" id="P" placeholder=" ادخل القيمه">
+                        <br> V
+                        <br>
+                        <input type="number" id="V" placeholder=" ادخل القيمه">
+                        <br> n
+                        <br>
+                        <input type="number" id="n" placeholder=" ادخل القيمه">
+                        <br> R
+                        <br>
+                        <input type="number" id="R" placeholder="الثابت = 0.0821">
+                        <br> T
+                        <br>
+                        <input type="number" id="T" placeholder=" ادخل القيمه">
+                        <br> =
+                        <br>
+                        <button class="buttom" onclick="perfect()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+                        </div>
+                        <hr>
+                        <br>
+                        قانون الكتله الموليه
+                        <br>
+                        <code><var>M</var></code> = <code><var>mRT</var></code> / <code><var>PV</var></code>
+                        <br>
+                        M
+                        <br>
+                        <input type="number" id="M" placeholder="">
+                        <br>
+                        m
+                        <br>
+                        <input type="number" id="m" placeholder="">
+                        <br>
+                        R
+                        <br>
+                        <input type="number" id="R" placeholder="">
+                        <br>
+                        T
+                        <br>
+                        <input type="number" id="T" placeholder="">
+                        <br>
+                        P
+                        <br>
+                        <input type="number" id="P" placeholder="">
+                        <br>
+                        V
+                        <br>
+                        <input type="number" id="V" placeholder="">
+                        <br>
+                        =
+                        <br>
+                        <button class="buttom" onclick="Molarr()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+                        </div>
+                        <hr>
+                        <br>
+                        قانون كثافه الماده
+                        <br>
+                        <code><var>D</var></code> = <code><var>MP</var></code> / <code><var>RT</var></code>
+                        <br>
+                        D
+                        <br>
+                        <input type="number" id="D" placeholder="">
+                        <br>
+                        M
+                        <br>
+                        <input type="number" id="MM" placeholder="">
+                        <br>
+                        P
+                        <br>
+                        <input type="number" id="PP" placeholder="">
+                        <br>
+                        R
+                        <br>
+                        <input type="number" id="R" placeholder="">
+                        <br>
+                        T
+                        <br>
+                        <input type="number" id="TT" placeholder="">
+                        <br>
+                        =
+                        <br>
+                            <button class="buttom" onclick="Density()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+                        </div>
+                    </center>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <script src="jsSrc/jquery-3.2.0.slim.min.js"></script>-->
 </body>
 
 </html>
