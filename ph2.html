@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/ph2.css">
     <script type="text/javascript" src="jsSrc/index.js"></script>
+    <script src="jsSrc/ktkot.js">
+
+
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -69,6 +73,33 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body" dir="rtl">
+                    <center>
+                        كتله المذيب
+                        <br>
+                        <input type="number" id="kTh" placeholder="ادخل القيمه">
+                        <br> كتله المحلول
+                        <br>
+                        <input type="number" id="kMh" placeholder="ادخل القيمه">
+                        <br> X100
+                        <br>
+                        <input type="number" id="Km" placeholder="100">
+                        <br> 
+                        <br>
+                        <button class="buttom" onclick="kg()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+
+                        </div>
+
+                    </center>
                 </div>
             </div>
         </div>
@@ -83,6 +114,32 @@
             <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body" dir="rtl">
                 </div>
+                <center dir="rtl">
+                    حجم المذيب
+                    <br>
+                    <input type="number" id="kTh" placeholder="ادخل القيمه">
+                    <br> حجم المحلول
+                    <br>
+                    <input type="number" id="kMh" placeholder="ادخل القيمه">
+                    <br> X100
+                    <br>
+                    <input type="number" id="KM" placeholder="100">
+                    <br> 
+                    <br>
+                    <button class="buttom" onclick="kg()"> الحل</button>
+                    <br>
+                    <br>
+                    <font size="3">النتيجه </font>
+                    <br>
+                    <div class="result" id="result"></div>
+                    <br>
+                    <div class="tips" id="tips">
+                        القانون
+                        <br> القانون الجديد
+                        <br> التعويض
+
+                    </div>
+                </center>
             </div>
         </div>
         <div class="panel panel-default">
@@ -96,87 +153,283 @@
             <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body" dir="rtl">
                 </div>
+                <center dir="rtl">
+                    عدد المولات
+                    <br>
+                    <input type="number" id="KM" placeholder="ادخل القيمه">
+                    <br> حجم المحلول
+                    <br>
+                    <input type="number" id="KM" placeholder="ادخل القيمه">
+                    <br> 
+                    <br>
+                    <button class="buttom" onclick="kg()"> الحل</button>
+                    <br>
+                    <br>
+                    <font size="3">النتيجه </font>
+                    <br>
+                    <div class="result" id="result"></div>
+                    <br>
+                    <div class="tips" id="tips">
+                        القانون
+                        <br> القانون الجديد
+                        <br> التعويض
+
+
+                </center>
+                </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-                <h3 class="panel-title center" dir="rtl">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h3 class="panel-title center" dir="rtl">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
 معادله التخفيف 
                     </a>
-                </h3>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body" dir="rtl">
+                    </h3>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body" dir="rtl">
+                    </div>
+                    <center dir="rtl">
+                        M<sub>1</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br> V
+                        <sub>1</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br> M
+                        <sub>2</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br> V
+                        <sub>2</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br> 
+                        <br>
+                        <button class="buttom" onclick="kg()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result"></div>
+                        <br>
+                        <div class="tips" id="tips">
+                            القانون
+                            <br> القانون الجديد
+                            <br> التعويض
+                        </div>
+
+                    </center>
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingfive">
-                <h3 class="panel-title center" dir="rtl">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-الولاليه 
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingfive">
+                    <h3 class="panel-title center" dir="rtl">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+المولاليه 
                     </a>
-                </h3>
-            </div>
-            <div id="collapsefive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingfive">
-                <div class="panel-body" dir="rtl">
+                    </h3>
+                </div>
+                <div id="collapsefive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingfive">
+                    <div class="panel-body" dir="rtl">
+                        <center>
+                            عدد المولات المذيب
+                            <br>
+                            <input type="number" id="KM" placeholder="ادخل القيمه">
+                            <br> كتله المذيب
+                            <br>
+                            <input type="number" id="KM" placeholder="ادخل القيمه">
+                            <br> 
+                            <br>
+                            <button class="buttom" onclick="kg()"> الحل</button>
+                            <br>
+                            <br>
+                            <font size="3">النتيجه </font>
+                            <br>
+                            <div class="result" id="result"></div>
+                            <br>
+                            <div class="tips" id="tips">
+                                القانون
+                                <br> القانون الجديد
+                                <br> التعويض
+                            </div>
+
+
+                        </center>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingsix">
-                <h3 class="panel-title center" dir="rtl">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingsix">
+                    <h3 class="panel-title center" dir="rtl">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
 الكسر المولي
                     </a>
-                </h3>
-            </div>
-            <div id="collapsesix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingsix">
-                <div class="panel-body" dir="rtl">
+                    </h3>
+                </div>
+                <div id="collapsesix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingsix">
+                    <div class="panel-body" dir="rtl">
+                        <center>
+                            n<sub>a</sub>
+                            <br>
+                            <input type="number" id="KM" placeholder="ادخل القيمه">
+                            <br> n
+                            <sub>b</sub>
+                            <br>
+                            <input type="number" id="KM" placeholder="ادخل القيمه">
+                            <br> n
+                            <sub>B</sub>
+                            <br>
+                            <input type="number" id="KM" placeholder="ادخل القيمه">
+                            <br> X
+                            <sub>b</sub>
+                            <br>
+                            <input type="number" id="KM" placeholder="ادخل القيمه">
+                            <br> 
+                            <br>
+                            <button class="buttom" onclick="kg()"> الحل</button>
+                            <br>
+                            <br>
+                            <font size="3">النتيجه </font>
+                            <br>
+                            <div class="result" id="result"></div>
+                            <br>
+                            <div class="tips" id="tips">
+                                القانون
+                                <br> القانون الجديد
+                                <br> التعويض
+                            </div>
+                        </center>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingSeven">
-                <h3 class="panel-title center" dir="rtl">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSeven">
+                    <h3 class="panel-title center" dir="rtl">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
 قانون هنري
                     </a>
-                </h3>
-            </div>
-            <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
-                <div class="panel-body" dir="rtl">
+                    </h3>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
+                    <div class="panel-body" dir="rtl">
+                        <center>
+                        S<sub>1</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        P<sub>1</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        S<sub>2</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        P<sub>2</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        <br>
+                        <button class="buttom" onclick="kg()"> الحل</button>
+                            <br>
+                            <br>
+                            <font size="3">النتيجه </font>
+                            <br>
+                            <div class="result" id="result"></div>
+                            <br>
+                            <div class="tips" id="tips">
+                                القانون
+                                <br> القانون الجديد
+                                <br> التعويض
+                            </div>
+                            </center>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingEight">
-                <h3 class="panel-title center" dir="rtl">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingEight">
+                    <h3 class="panel-title center" dir="rtl">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
 الارتفاع في درجه الغليان
                     </a>
-                </h3>
-            </div>
-            <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingEight">
-                <div class="panel-body" dir="rtl">
+                    </h3>
+                </div>
+                <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingEight">
+                    <div class="panel-body" dir="rtl">
+                        <center>
+                    T<sub>b</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        K<sub>b</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        M
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                          <br>
+                        <br>
+                        <button class="buttom" onclick="kg()"> الحل</button>
+                            <br>
+                            <br>
+                            <font size="3">النتيجه </font>
+                            <br>
+                            <div class="result" id="result"></div>
+                            <br>
+                            <div class="tips" id="tips">
+                                القانون
+                                <br> القانون الجديد
+                                <br> التعويض
+                            </div>
+                    </center>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingNine">
-                <h3 class="panel-title center" dir="rtl">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingNine">
+                    <h3 class="panel-title center" dir="rtl">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
 الانخفاض في درجه التجمد 
                     </a>
-                </h3>
-            </div>
-            <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingNine">
-                <div class="panel-body" dir="rtl">
+                    </h3>
+                </div>
+                <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingNine">
+                    <div class="panel-body" dir="rtl">
+                        <center>
+                    T<sub>f</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        K<sub>f</sub>
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <br>
+                        M
+                        <br>
+                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                          <br>
+                        <br>
+                        <button class="buttom" onclick="kg()"> الحل</button>
+                            <br>
+                            <br>
+                            <font size="3">النتيجه </font>
+                            <br>
+                            <div class="result" id="result"></div>
+                            <br>
+                            <div class="tips" id="tips">
+                                القانون
+                                <br> القانون الجديد
+                                <br> التعويض
+                            </div>
+                    </center>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
