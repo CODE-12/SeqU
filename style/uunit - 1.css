@@ -1,4 +1,4 @@
-Mdi{ position: relative ;top:50%; right: 100px; width: 333px; height:300px;}
+#Mdi{ position: relative ;top:center; right: center; width: 333px; height:300px;}
 
 .SeN-BC-re{ border: 1px solid #ff0000;}
 .SeN-BC-or{ border: 1px solid #ff9200;}
@@ -12,7 +12,7 @@ Mdi{ position: relative ;top:50%; right: 100px; width: 333px; height:300px;}
 .SeN-BC-bla{ border: 1px solid #000000;}
 .SeN-BC-wi{ border: 1px solid #ffffff;}
 
-.tex{ width: 30px; height: 10px;  }
+.tex{ width:50px; height: 15px; margin: 15px; padding:3px;  }
 #result{ width:200px;height: 20px;position: absolute; bottom: 10px; left: 50px; background-color:#e3e8f2;}
 
 .buttom{position: absolute;top: 100px;left: 53px;  width: 210px; height: 18px; background-color:#e3e8f2; text-align: center; }
@@ -34,10 +34,10 @@ Mdi{ position: relative ;top:50%; right: 100px; width: 333px; height:300px;}
 
 /*V1 / T1 = V2 / T2   */
 
-#v3{ position: absolute;top:55px;left: 113px;} 
+#v3{ position: absolute;top:45px;left: 113px;} 
 #t1{ position: absolute;top:75px;left: 113px;}
-#v4{ position: absolute;top:55px;left: 173px;}
-#t2{ position: absolute;top:75px;left: 173px;}
+#v4{ position: absolute;top:45px;left: 193px;}
+#t2{ position: absolute;top:75px;left: 193px;}
 
 /*P1 / T1 = P2 / T2   */
 

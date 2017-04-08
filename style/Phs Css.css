@@ -75,7 +75,7 @@
 }
 */
 
-#result {
+.result {
     width: 200px;
     height: 20px;
 
@@ -154,7 +154,7 @@ a:hover {
     /* The image used */
     background-image: url(../img/j0PLI7n.jpg);
     /* Full height */
-    height: 100%;
+    height: auto;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
