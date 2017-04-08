@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/Phs%20Css.css">
     <script src="jsSrc/chapter-one.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script type="text/javascript" src="jsSrc/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jsSrc/ktkot.js"></script>
 </head>
 
 <body class="hg">
@@ -62,8 +64,9 @@
     <h1 class="center color-white"> قوانين فصل الاول </h1>
 
     <br>
-
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="row">
+    <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 ">  </div>
+    <div class="panel-group col-xs-12 col-sm-12 col-md-4 col-lg-4 " id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
                 <h3 class="panel-title center" dir="rtl">
@@ -89,14 +92,14 @@
                         <input type="number" id="v2" placeholder="ادخل القيمه">
                         <br> =
                         <br>
-                        <button class="buttom" onclick="Poyle()"> الحل</button>
+                        <button class="buttom" onclick="P()"> الحل</button>
                         <br>
                         <br>
                         <font size="3">النتيجه </font>
                         <br>
-                        <div class="result" id="result"></div>
+                        <div class="result" id="result2"></div>
                         <br>
-                        <div class="tips" id="tips">
+                        <div class="tips" id="tips2">
                             القانون
                             <br> القانون الجديد
                             <br> التعويض
@@ -115,33 +118,34 @@
                 </h3>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body" dir="rtl">
+               <div class="panel-body" dir="rtl">
                     <center>
                         V<sub>1</sub>
                         <br>
-                        <input type="number" id="v3" placeholder="ادخل القيمه">
+                        <input type="number" id="t1" placeholder=" ادخل القيمه">
                         <br> T<sub>1</sub>
                         <br>
-                        <input type="number" id="t1" placeholder="ادخل القيمه">
+                        <input type="number" id="v3" placeholder="ادخل القيمه">
                         <br> V<sub>2</sub>
                         <br>
-                        <input type="number" id="v4" placeholder="ادخل القيمه">
+                        <input type="number" id="t2" placeholder="ادخل القيمه">
                         <br> T<sub>2</sub>
                         <br>
-                        <input type="number" id="t2" placeholder="ادخل القيمه">
+                        <input type="number" id="v4" placeholder="ادخل القيمه">
                         <br> =
                         <br>
-                        <button class="buttom" onclick="Sharles()">الحل</button>
+                        <button class="buttom" onclick="S()"> الحل</button>
                         <br>
                         <br>
                         <font size="3">النتيجه </font>
                         <br>
-                        <div class="result" id="result"></div>
+                        <div class="result" id="result1"></div>
                         <br>
-                        <div class="tips" id="tips">
+                        <div class="tips" id="tips1">
                             القانون
                             <br> القانون الجديد
                             <br> التعويض
+
                         </div>
                     </center>
                 </div>
@@ -177,9 +181,9 @@
                         <br>
                         <font size="3">النتيجه </font>
                         <br>
-                        <div class="result" id="result"></div>
+                        <div class="result" id="result3"></div>
                         <br>
-                        <div class="tips" id="tips">
+                        <div class="tips" id="tips3">
                             القانون
                             <br> القانون الجديد
                             <br> التعويض
@@ -203,7 +207,7 @@
                         <br>
                         <input type="number" id="pp1" placeholder="ادخل القيمه">
                         <br> V
-                        <sub>2</sub>
+                        <sub>1</sub>
                         <br>
                         <input type="number" id="vv1" placeholder="ادخل القيمه">
                         <br> T
@@ -274,9 +278,9 @@
                         <br>
                         <font size="3">النتيجه </font>
                         <br>
-                        <div class="result" id="result"></div>
+                        <div class="result" id="result4"></div>
                         <br>
-                        <div class="tips" id="tips">
+                        <div class="tips" id="tips4">
                             القانون
                             <br> القانون الجديد
                             <br> التعويض
@@ -287,32 +291,32 @@
                         <code><var>M</var></code> = <code><var>mRT</var></code> / <code><var>PV</var></code>
                         <br> M
                         <br>
-                        <input type="number" id="M" placeholder="">
+                        <input type="number" id="M1" placeholder="">
                         <br> m
                         <br>
-                        <input type="number" id="m" placeholder="">
+                        <input type="number" id="m3" placeholder="">
                         <br> R
                         <br>
                         <input type="number" id="R" placeholder="">
                         <br> T
                         <br>
-                        <input type="number" id="T" placeholder="">
+                        <input type="number" id="T5" placeholder="">
                         <br> P
                         <br>
-                        <input type="number" id="P" placeholder="">
+                        <input type="number" id="_P" placeholder="">
                         <br> V
                         <br>
-                        <input type="number" id="V" placeholder="">
+                        <input type="number" id="V5" placeholder="">
                         <br> =
                         <br>
-                        <button class="buttom" onclick="Molarr()"> الحل</button>
+                        <button class="buttom" onclick="M()"> الحل</button>
                         <br>
                         <br>
                         <font size="3">النتيجه </font>
                         <br>
-                        <div class="result" id="result"></div>
+                        <div class="result" id="result6"></div>
                         <br>
-                        <div class="tips" id="tips">
+                        <div class="tips" id="tips6">
                             القانون
                             <br> القانون الجديد
                             <br> التعويض
@@ -343,9 +347,9 @@
                         <br>
                         <font size="3">النتيجه </font>
                         <br>
-                        <div class="result" id="result"></div>
+                        <div class="result" id="result5"></div>
                         <br>
-                        <div class="tips" id="tips">
+                        <div class="tips" id="tips5">
                             القانون
                             <br> القانون الجديد
                             <br> التعويض
@@ -355,6 +359,10 @@
             </div>
         </div>
     </div>
+    
+    <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-4">  </div>
+    </div>
+    
 </body>
 
 </html>

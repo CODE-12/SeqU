@@ -10,9 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/Ph3.css">
+    
     <script type="text/javascript" src="jsSrc/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jsSrc/chapter-thre.js"></script>
 </head>
 
 <body class="hg">
@@ -58,7 +60,9 @@
     <!--NAVBAR END-->
     <br>
     <h1 class="center color-white"> قوانين الوحده الثالثه</h1>
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+    <div class="panel-group col-xs-12 col-sm-12 col-md-4 col-lg-4" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingSixteen">
                 <h3 class="panel-title center" dir="rtl">
@@ -72,18 +76,18 @@
                     <center>
                     K<sub>w</sub>
                         <br>
-                          <input type="number" id="KM" placeholder="ادخل القيمه">
+                          <input type="number" id="kw" placeholder="ادخل القيمه">
                         <br>
                         [<sup>+</sup>H]
                         <br>
-                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <input type="number" id="H" placeholder="ادخل القيمه">
                         <br>
                         [<sup>-</sup>OH]
                         <br>
-                        <input type="number" id="KM" placeholder="ادخل القيمه">
+                        <input type="number" id="OH" placeholder="ادخل القيمه">
                          <br>
                         <br>
-                        <button class="buttom" onclick="kg()"> الحل</button>
+                        <button class="buttom" onclick="KW()"> الحل</button>
                             <br>
                             <br>
                             <font size="3">النتيجه </font>
@@ -112,14 +116,14 @@
                     <center>
                     pH
                         <br>
-                         <input dir="rtl" type="number" id="KM" placeholder="ادخل القيمه">
+                         <input dir="rtl" type="number" id="pH" placeholder="ادخل القيمه">
                         <br>
                         -log[<sup>+</sup>H]
                         <br>
-                         <input  dir="rtl"type="number" id="KM" placeholder="ادخل القيمه">
+                         <input  dir="rtl"type="number" id=" " placeholder="ادخل القيمه">
                           <br>
                         <br>
-                        <button class="buttom" onclick="kg()"> الحل</button>
+                        <button class="buttom" onclick="PH()"> الحل</button>
                             <br>
                             <br>
                             <font size="3">النتيجه </font>
@@ -149,14 +153,14 @@
                     <center>
                     pOH
                     <br>
-                    <input dir="rtl" type="number" id="KM" placeholder="ادخل القيمه">
+                    <input dir="rtl" type="number" id="pH" placeholder="ادخل القيمه">
                     <br>
                     -log [<sup>-</sup>OH] 
                     <br>
-                    <input  dir="rtl" type="number" id="KM" placeholder="ادخل القيمه">
+                    <input  dir="rtl" type="number" id="trkez" placeholder="ادخل القيمه">
                      <br>
                         <br>
-                        <button class="buttom" onclick="kg()"> الحل</button>
+                        <button class="buttom" onclick="PH()"> الحل</button>
                             <br>
                             <br>
                             <font size="3">النتيجه </font>
@@ -188,14 +192,14 @@
                     
                     pH
                     <br>
-                     <input  dir="rtl" type="number" id="KM" placeholder="ادخل القيمه">
+                     <input  dir="rtl" type="number" id="H" placeholder="ادخل القيمه">
                     <br>
                     pOH
                     <br>
-                     <input  dir="rtl" type="number" id="KM" placeholder="ادخل القيمه">
+                     <input  dir="rtl" type="number" id="OH" placeholder="ادخل القيمه">
                     <br>
                         <br>
-                        <button class="buttom" onclick="kg()"> الحل</button>
+                        <button class="buttom" onclick="_ppOh()"> الحل</button>
                             <br>
                             <br>
                             <font size="3">النتيجه </font>
@@ -211,6 +215,9 @@
                 </div>
             </div>
         </div>
+    </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+
     </div>
 </body>
 

@@ -1,5 +1,5 @@
- function kg()
-{
+ function k()
+{ alert("hg")
      var k1 =parseFloat(document.getElementById("KM").value);
     var k2 =parseFloat(document.getElementById("kTh").value);
     var k3 =parseFloat(document.getElementById("kMh").value);
