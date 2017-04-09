@@ -78,7 +78,6 @@
 .result {
     width: 200px;
     height: 20px;
-
     bottom: 10px;
     left: 50px;
     background-color: #e3e8f2;
@@ -151,19 +150,13 @@ a:hover {
 }
 
 .hg {
-    /* The image used */
     background-image: url(../img/j0PLI7n.jpg);
-    /* Full height */
     height: auto;
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 
 @media only screen and (max-device-width: 1024px) {
     .hg {
