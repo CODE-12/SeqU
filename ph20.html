@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SeqU</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="CODE-12 Group" />
+    <meta name="desciption" content="حل مسائل منهج كيمياء3" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/ph2.css">
+    <script type="text/javascript" src="jsSrc/index.js"></script>
+    <script type="text/javascript" src="jsSrc/ktkot2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="hg">
+    <!--NAVBAR START-->
+    <div class="navbar navbar-inverse navbar-twitch" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <span class="small-nav"> <span class="logo">  </span> </span>
+                    <span class="full-nav">SeqU</span>
+                </a>
+            </div>
+            <div class="">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">
+                            <span class="small-nav" data-toggle="tooltip" data-placement="right" title="Home"> 
+                                    <span class="glyphicon glyphicon-home"></span>
+                            </span>
+                            <span class="full-nav"> Home </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about-us" disabled>
+                            <span class="small-nav" data-toggle="tooltip" data-placement="right" title="About Us"> 
+                                    <span class="fa fa-users"></span>
+                            </span>
+                            <span class="full-nav"> community (coming soon) </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact-us">
+                            <span class="small-nav" data-toggle="tooltip" data-placement="right" title="Contact Us"> 
+                                    <span class="glyphicon glyphicon-comment"></span>
+                            </span>
+                            <span class="full-nav"> Contact Us </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    
+    
+    
+    
+    
+    <h1 class="center color-white"> قوانين الفصل الثاني</h1>
+    <br>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+        
+<div class="panel-group col-xs-12 col-sm-12 col-md-4 col-lg-4" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title center"  dir="rtl">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-algin:center;">
+         النسبة المئوية بدلاله الكتلة 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body" dir="rtl">
+          <center>
+              
+               كتله المذاب
+                            <br>
+                            <input type="number" id="kTh" class="tex">
+                            <br> كتله المحلول
+                            <br>
+                            <input type="number" id="kMh" class="tex">
+                            <br> النسبة المئوية 
+                            <br>
+                            <input type="number" id="KM" class="tex">
+                            <br>
+                            <br>
+                            <button onclick="k()" class="buttom">الحل</button>
+                            <br>
+                            <br>
+                            <font size="">النتيجة</font>
+                            <br>
+                            <div class="result" id="result"> </div>
+                            <br>
+
+              
+          </center>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title center"  dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          النسبة المئوية بدلاله الحجم
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body" dir="rtl">
+        <center>
+              
+               حجم المذاب
+                            <br>
+                            <input type="number" id="kTh1" class="tex">
+                            <br> حجم المحلول
+                            <br>
+                            <input type="number" id="kMh1" class="tex">
+                            <br> النسبة المئوية 
+                            <br>
+                            <input type="number" id="KM1" class="tex">
+                            <br>
+                            <br>
+                            <button onclick="g()" class="buttom">الحل</button>
+                            <br>
+                            <br>
+                            <font size="">النتيجة</font>
+                            <br>
+                            <div class="result" id="result1"> </div>
+                            <br>
+
+              
+          </center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title center"  dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         مولاريه M
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body" dir="rtl">
+     <center>
+              
+               عدد المولات
+                        <br>
+                        <input type="number" id="kTh2" placeholder="ادخل القيمه">
+                        <br> حجم المحلول
+                        <br>
+                        <input type="number" id="kMh2" placeholder="ادخل القيمه">
+                        <br> مولاريه 
+                        <br>
+                        <input type="number" id="KM2" placeholder="ادخل القيمه">
+<br>
+                        <button class="buttom" onclick="mlar()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result2"></div>
+                        <br>
+                       
+              
+          </center>
+      </div>
+    </div>
+  </div>
+    
+    
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title center" dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+معادلة التخفيف         </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body" dir="rtl">
+        <center>
+              
+             M<sub>1</sub>
+                            <br>
+                            <input type="number" id="m1" placeholder="ادخل القيمه">
+                            <br> V
+                            <sub>1</sub>
+                            <br>
+                            <input type="number" id="v1" placeholder="ادخل القيمه">
+                            <br> M
+                            <sub>2</sub>
+                            <br>
+                            <input type="number" id="m2" placeholder="ادخل القيمه">
+                            <br> V
+                            <sub>2</sub>
+                            <br>
+                            <input type="number" id="v2" placeholder="ادخل القيمه">
+                            <br>
+                            <br>
+                            <button class="buttom" onclick="T7FEF()"> الحل</button>
+                            <br>
+                            <br>
+                            <font size="3">النتيجه </font>
+                            <br>
+                            <div class="result" id="result4"></div>
+                            <br>
+                            <div class="tips" id="tips4">
+                                القانون
+                                <br> القانون الجديد
+                                <br> التعويض
+                            </div>
+
+              
+          </center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title center" dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        مولاليه
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body" dir="rtl">
+     <center>
+              عدد مولات الممذاب
+                        <br>
+                        <input type="number" id="kTh2" placeholder="ادخل القيمه">
+                        <br>كتلة المذيب
+                        <br>
+                        <input type="number" id="kMh2" placeholder="ادخل القيمه">
+                        <br> مولاليه 
+                        <br>
+                        <input type="number" id="KM2" placeholder="ادخل القيمه">
+<br>
+                        <button class="buttom" onclick="mlor()"> الحل</button>
+                        <br>
+                        <br>
+                        <font size="3">النتيجه </font>
+                        <br>
+                        <div class="result" id="result3"></div>
+                        <br>
+                       
+              
+          </center>
+      </div>
+    </div>
+  </div>
+    
+     <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title center" dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          الكسر المولي
+        </a>
+          
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body" dir="rtl">
+          <center>
+              
+              n<sub>a</sub>
+                                <br>
+                                <input type="number" id="Xa" placeholder="ادخل القيمه">
+                                <br> n
+                                <sub>b</sub>
+                                <br>
+                                <input type="number" id="Xb" placeholder="ادخل القيمه">
+                               <br> X
+                                <br>
+                                <input type="text" id="X" placeholder="A or B">
+                                <br>
+                                <br>
+                                <button class="buttom" onclick="KSER()"> الحل</button>
+                                <br>
+                                <br>
+                                <font size="3">النتيجه </font>
+                                <br>
+                                <div class="result" id="result8"></div>
+                                <br>
+                                <div class="tips" id="tips8">
+                                    القانون
+                                    <br> القانون الجديد
+                                    <br> التعويض
+                                </div>
+          </center>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title center" dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+هنري
+          </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body" dir="rtl">
+        <center>
+              
+              
+             S<sub>1</sub>
+                                <br>
+                                <input type="number" id="s1" placeholder="ادخل القيمه">
+                                <br> P
+                                <sub>1</sub>
+                                <br>
+                                <input type="number" id="p1" placeholder="ادخل القيمه">
+                                <br> S
+                                <sub>2</sub>
+                                <br>
+                                <input type="number" id="s2" placeholder="ادخل القيمه">
+                                <br> P
+                                <sub>2</sub>
+                                <br>
+                                <input type="number" id="p2" placeholder="ادخل القيمه">
+                                <br>
+                                <br>
+                                <button class="buttom" onclick="HERNY()"> الحل</button>
+                                <br>
+                                <br>
+                                <font size="3">النتيجه </font>
+                                <br>
+                                <div class="result" id="result7"></div>
+                                <br>
+                                <div class="tips" id="tips7">
+                                    القانون
+                                    <br> القانون الجديد
+                                    <br> التعويض
+                                </div>
+            
+          </center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title center" dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        الارتفاع في درجة الغليان 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+     <center>
+              
+               T<sub>b</sub>
+                                <br>
+                                <input type="number" id="T1" placeholder="ادخل القيمه">
+                                <br> K
+                                <sub>b</sub>
+                                <br>
+                                <input type="number" id="B1" placeholder="ادخل القيمه">
+                                <br> M
+                                <br>
+                                <input type="number" id="M2" placeholder="ادخل القيمه">
+                                <br>
+                                <br>
+                                <button class="buttom" onclick="ARTF3()"> الحل</button>
+                                <br>
+                                <br>
+                                <font size="3">النتيجه </font>
+                                <br>
+                                <div class="result" id="result5"></div>
+                                <br>
+                                <div class="tips" id="tips5">
+                                    القانون
+                                    <br> القانون الجديد
+                                    <br> التعويض
+                                </div>
+          </center>
+      </div>
+    </div>
+  </div>
+    
+    
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingNine">
+      <h4 class="panel-title center" dir="rtl">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+الانخفاض في درجة التجمد         </a>
+      </h4>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+      <div class="panel-body" dir="rtl">
+        <center>
+              
+            T<sub>f</sub>
+                                <br>
+                                <input type="number" id="T2" placeholder="ادخل القيمه">
+                                <br> K
+                                <sub>f</sub>
+                                <br>
+                                <input type="number" id="B2" placeholder="ادخل القيمه">
+                                <br> M
+                                <br>
+                                <input type="number" id="M2" placeholder="ادخل القيمه">
+                                <br>
+                                <br>
+                                <button class="buttom" onclick="AN7FATH()"> الحل</button>
+                                <br>
+                                <br>
+                                <font size="3">النتيجه </font>
+                                <br>
+                                <div class="result" id="result6"></div>
+                                <br>
+                                <div class="tips" id="tips6">
+                                    القانون
+                                    <br> القانون الجديد
+                                    <br> التعويض
+                                </div>
+              
+          </center>
+      </div>
+    </div>
+  </div>
+  
+    
+    
+    
+    
+    
+    
+    
+</div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+
+        
+        </div>
+    </div>
+    </body>
+    
+
+</html>

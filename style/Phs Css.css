@@ -142,7 +142,7 @@ a:visited {
 }
 
 a:hover {
-    color: blue;
+    color: gray;
 }
 
 .center {
@@ -150,8 +150,8 @@ a:hover {
 }
 
 .hg {
-    background-image: url(../img/j0PLI7n.jpg);
-    height: auto;
+    background-image: url(img/artsfon.com-68396.jpg);
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

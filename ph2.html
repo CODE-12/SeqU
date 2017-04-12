@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/ph2.css">
     <script type="text/javascript" src="jsSrc/index.js"></script>
-    <script type="text/javascript" src="jsSrc/ktkot.js"></script>
+    <script type="text/javascript" src="jsSrc/ktkot2.js"></script>
     <link rel="stylesheet" href="style/Phs%20Css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -61,7 +61,7 @@
     <h1 class="center color-white"> قوانين الفصل الثاني</h1>
     <br>
     <div class="container-fluid">
-    <div class="row">
+        <div class="row">
         <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 ">  </div>
         <div class="panel-group xs-12 col-sm-12 col-md-4 col-lg-4" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
@@ -72,33 +72,35 @@
         </a>
                     </h3>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <d iv id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body" dir="rtl">
                         <center>
                             كتله المذاب
                             <br>
-                            <input type="text" id="t1" class="tex">
+                            <input type="text" id="kTh" class="tex">
                             <br> كتله المحلول
                             <br>
-                            <input type="text" id="v3" class="tex">
-                            <br> x100
+                            <input type="text" id="kMh" class="tex">
+                            <br> النسبة المئوية 
                             <br>
-                            <input type="text" id="t2" class="tex">
+                            <input type="text" id="KM" class="tex">
                             <br>
                             <br>
-                            <button onclick="" class="buttom">الحل</button>
+                            <button onclick="k()" class="buttom">الحل</button>
                             <br>
                             <br>
                             <font size="">النتيجة</font>
                             <br>
                             <div class="result" id="result"> </div>
                             <br>
-                            <div class="tips" id="tips"> القانون <br/>القانون الجديد <br/>التعويض <br/></div>
 
                     </div>
-                </div>
-            </div>
+             
+           
             </center>
+            </div>
+         </div>
+            
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingTwo">
                     <h3 class="panel-title center" dir="rtl">
@@ -113,28 +115,23 @@
                     <center dir="rtl">
                         حجم المذيب
                         <br>
-                        <input type="number" id="kTh" placeholder="ادخل القيمه">
+                        <input type="number" id="kTh1" placeholder="ادخل القيمه">
                         <br> حجم المحلول
                         <br>
-                        <input type="number" id="kMh" placeholder="ادخل القيمه">
-                        <br> X100
+                        <input type="number" id="kMh1" placeholder="ادخل القيمه">
+                        <br> النسبة المئوية 
                         <br>
-                        <input type="number" id="KM" placeholder="100">
+                        <input type="number" id="KM1" placeholder="100">
                         <br>
                         <br>
-                        <button class="buttom" onclick="kg()"> الحل</button>
+                        <button class="buttom" onclick="g()"> الحل</button>
                         <br>
                         <br>
                         <font size="3">النتيجه </font>
                         <br>
-                        <div class="result" id="result"></div>
+                        <div class="result" id="result1"></div>
                         <br>
-                        <div class="tips" id="tips">
-                            القانون
-                            <br> القانون الجديد
-                            <br> التعويض
-
-                        </div>
+                      
                     </center>
                 </div>
             </div>
@@ -146,7 +143,7 @@
                     </a>
                     </h3>
                 </div>
-                <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">  
                     <div class="panel-body" dir="rtl">
                     </div>
                     <center dir="rtl">
@@ -169,11 +166,12 @@
                             القانون
                             <br> القانون الجديد
                             <br> التعويض
-
+</div>
 
                     </center>
                     </div>
-                </div>
+              
+         
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingFour">
                         <h3 class="panel-title center" dir="rtl">
@@ -425,8 +423,10 @@
                 </div>
             </div>
         </div>
-        </div>
-         <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-4">  </div>
+        <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-4"></div>
+  </div>
+       </div> 
+         
 </body>
 
 </html>
