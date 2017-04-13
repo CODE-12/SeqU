@@ -66,28 +66,34 @@
 }
 function mlar()
 {
-     var m1 =parseFloat(document.getElementById("KM2").value);
-    var m2 =parseFloat(document.getElementById("kTh2").value);
-    var m3 =parseFloat(document.getElementById("kMh2").value);
+    
+     var m1 =document.getElementById("KM2").value;
+    var m2 =document.getElementById("kTh2").value;
+    var m3 =document.getElementById("kMh2").value;
     var reslt ;
      var tips="";
     if(m1  == "x" || m1 =="X" || m1 =="?")
     {
-        reslt= (m2)/m3;
+        var M2 =parseFloat(m2);
+        var M3 =parseFloat(m3);
+        reslt= (M2)/M3;
         
          document.getElementById("result2").innerHTML= reslt; 
         
     }
     else if(m2  == "x" || m2 =="X" || m2 =="?")
     {
-         reslt= (m1*m3);
+         var M1 =parseFloat(m1);
+        var M3 =parseFloat(m3);
+         reslt= (M1*M3);
         
-         document.getElementById("result1").innerHTML= reslt; 
+         document.getElementById("result2").innerHTML= reslt; 
         
     }
     else if(m3  == "x" || m2 =="X" || m2 =="?")
-    {
-       reslt= (m2)/m1;
+    { var M2 =parseFloat(m2);
+        var M1 =parseFloat(m1);
+       reslt= (M2)/M1;
         
          document.getElementById("result2").innerHTML= reslt; 
         
@@ -97,28 +103,35 @@ function mlar()
 }
 function mlor()
 {
-     var m1 =parseFloat(document.getElementById("KM3").value);
-    var m2 =parseFloat(document.getElementById("kTh3").value);
-    var m3 =parseFloat(document.getElementById("kMh3").value);
+     var m1 =document.getElementById("KM3").value;
+    var m2 =document.getElementById("kTh3").value;
+    var m3 =document.getElementById("kMh3").value;
     var reslt ;
      
     if(m1  == "x" || m1 =="X" || m1 =="?")
     {
-        reslt= (m2)/m3;
+         var M2 =parseFloat(m2);
+        var M3 =parseFloat(m3);
+        reslt= (M2)/M3;
         
          document.getElementById("result3").innerHTML= reslt; 
         
     }
     else if(m2  == "x" || m2 =="X" || m2 =="?")
     {
-         reslt= (m1*m3);
+          var M1 =parseFloat(m1);
+        var M3 =parseFloat(m3);
+         reslt= (M1*M3);
         
          document.getElementById("result3").innerHTML= reslt; 
         
     }
     else if(m3  == "x" || m3 =="X" || m3 =="?")
     {
-       reslt= (m2)/m1;
+       var M2 =parseFloat(m2);
+        var M1 =parseFloat(m1);
+       reslt= (M2)/M1;
+        
         
          document.getElementById("result3").innerHTML= reslt; 
         
@@ -128,16 +141,18 @@ function mlor()
 }
 function T7FEF()
 {
-     var M1 =parseFloat(document.getElementById("m1").value);
-    var M2 =parseFloat(document.getElementById("m2").value);
-    var V1 =parseFloat(document.getElementById("v1").value);
-    var V2 =parseFloat(document.getElementById("v2").value);
+     var M1 =document.getElementById("m1").value;
+    var M2 =document.getElementById("m2").value;
+    var V1 =document.getElementById("v1").value;
+    var V2 =document.getElementById("v2").value;
     var reslt ;
      var tips ;
     if(M1== "x"||  M1=="X" ||  M1=="?")
         {
-            
-            reslt = (V2 / V1) * M2;
+            var m2 =parseFloat(M2);
+             var v2 =parseFloat(V2);
+             var v1 =parseFloat(V1);
+            reslt = (v2 / v1) * m2;
             tips   = "M1 V1 = M2 V2 "
             tips  += "<br /> ";
             tips  += "M1 = (M2 / V1) * M2 ";
@@ -148,9 +163,11 @@ function T7FEF()
             document.getElementById("result4").innerHTML= reslt; 
         }
     else if(M2== "x"||  M2=="X" ||  M2=="?")
-        {
+        {    var m1 =parseFloat(M1);
+             var v2 =parseFloat(V2);
+             var v1 =parseFloat(V1);
             
-            reslt = (V1 / V2) * M1;
+            reslt = (v1 / v2) * m1;
              tips   = "M1 V1 = M2 V2 "
             tips  += "<br /> ";
             tips  += "M2 = (V1 / V2) * M1 ";
@@ -162,8 +179,10 @@ function T7FEF()
         }
     else if(V1== "x"||  V1=="X" ||  V1=="?")
         {
-            
-            reslt = (M2 / M1) * V2;
+             var m1 =parseFloat(M1);
+             var v2 =parseFloat(V2);
+             var m2 =parseFloat(M2);
+            reslt = (m2 / m1) * v2;
              tips   = "M1 V1 = M2 V2 "
             tips  += "<br /> ";
             tips  += "V1 = (M2 / M1) * V2 ";
@@ -177,13 +196,15 @@ function T7FEF()
     
     else if(V2== "x"||  V2=="X" ||  V2=="?")
         {
-            
-            reslt = (M1 / M2) * V1;
+             var m1 =parseFloat(M1);
+             var v1 =parseFloat(V1);
+             var m2 =parseFloat(M2);
+            reslt = (m1 / m2) * v1;
              tips   = "M1 V1 = M2 V2 "
             tips  += "<br /> ";
-            tips  += "V1 = (M1 / PM) * V1 ";
+            tips  += "V2 = (M1 / PM) * V1 ";
             tips  += "<br />";
-            tips  += "V1 = "+"("+M1+" / "+M2+") "+" * "+V1;
+            tips  += "V2 = "+"("+M1+" / "+M2+") "+" * "+V1;
             reslt += "<br />";
             document.getElementById("tips4").innerHTML= tips;
             document.getElementById("result4").innerHTML= reslt; 
@@ -193,15 +214,16 @@ function T7FEF()
 
 function ARTF3()
 {
-     var TF =parseFloat(document.getElementById("T1").value);
-    var BF =parseFloat(document.getElementById("B1").value);
-    var M =parseFloat(document.getElementById("M1").value);
+     var TF =document.getElementById("T1").value;
+    var BF =document.getElementById("B1").value;
+    var M =document.getElementById("M1").value;
     var reslt ;
      var tips ;
     if(TF== "x"||  TF=="X" ||  TF=="?")
         {
-            
-            reslt = BF * M;
+            var bf = parseFloat(BF);
+            var m = parseFloat(M);
+            reslt = bf * m;
             tips   = "Tf = Bf M"
             tips  += "<br /> ";
             tips  += "Tf = Bf * M ";
@@ -213,7 +235,9 @@ function ARTF3()
         }
     else if(BF== "x"||  BF=="X" ||  BF=="?")
         {
-           reslt = M / TF;
+             var tf = parseFloat(TF);
+            var m = parseFloat(M);
+           reslt = tf / m;
             tips   = "Tf = Bf M"
             tips  += "<br /> ";
             tips  += "Bf =  M / Tf ";
@@ -225,8 +249,9 @@ function ARTF3()
         }
     else if(M== "x"||  M=="X" ||  M=="?")
         {
-            
-            reslt = BF / TF;
+             var bf = parseFloat(BF);
+            var tf = parseFloat(TF);
+            reslt = tf/ bf;
             tips   = "Tf = Bf M"
             tips  += "<br /> ";
             tips  += "M =  Bf / Tf ";
@@ -241,15 +266,15 @@ function ARTF3()
 }
 function AN7FATH()
 {
-     var TF =parseFloat(document.getElementById("T2").value);
-    var BF =parseFloat(document.getElementById("B2").value);
-    var M =parseFloat(document.getElementById("M2").value);
+     var TF =document.getElementById("T2").value;
+    var BF =document.getElementById("B2").value;
+    var M =document.getElementById("M2").value;
     var reslt ;
      var tips ;
     if(TF== "x"||  TF=="X" ||  TF=="?")
-        {
-            
-            reslt = BF * M;
+        {  var bf = parseFloat(BF);
+            var m = parseFloat(M);
+            reslt = bf * m;
             tips   = "Tf = Bf M"
             tips  += "<br /> ";
             tips  += "Tf = Bf * M ";
@@ -261,7 +286,9 @@ function AN7FATH()
         }
     else if(BF== "x"||  BF=="X" ||  BF=="?")
         {
-           reslt = M / TF;
+            var tf = parseFloat(TF);
+            var m = parseFloat(M);
+           reslt = tf / m;
             tips   = "Tf = Bf M"
             tips  += "<br /> ";
             tips  += "Bf =  M / Tf ";
@@ -274,7 +301,9 @@ function AN7FATH()
     else if( M == "x"||  M =="X" ||  M == "?")
         {
             
-            reslt = BF / TF;
+           var bf = parseFloat(BF);
+            var tf = parseFloat(TF);
+            reslt = tf / bf;
             tips   = "Tf = Bf M"
             tips  += "<br /> ";
             tips  += "M =  Bf / Tf ";
@@ -291,15 +320,18 @@ function AN7FATH()
 function HERNY()
 {
     
-    var P1 =parseFloat(document.getElementById("p1").value);
-    var P2 =parseFloat(document.getElementById("p2").value);
-    var S1 =parseFloat(document.getElementById("s1").value);
-    var S2 =parseFloat(document.getElementById("s2").value);
+    var P1 =document.getElementById("p1").value;
+    var P2 =document.getElementById("p2").value;
+    var S1 =document.getElementById("s1").value;
+    var S2 =document.getElementById("s2").value;
     var reslt ;
      var tips ;
     if(S1  == "x" || S1 == "X" || S1 == "?")
     {
-        reslt= (P1*S2)/P2;
+        var p1 = parseFloat(P1);
+        var p2= parseFloat(P2);
+         var s2 = parseFloat(S2);
+        reslt= (p1*s2)/p2;
         reslt+= "<br /";
         tips = "P1 / S1 = P2 / S2";
         tips+="<br /";
@@ -311,7 +343,10 @@ function HERNY()
     }
     else if(S2  == "x" || S2 =="X" || S2 =="?")
     {
-        reslt= (P2*S1)/P1;
+        var p1 = parseFloat(P1);
+        var p2= parseFloat(P2);
+         var s1 = parseFloat(S1);
+        reslt= (p2*s1)/p1;
         reslt+= "<br /";
         tips = "S1 / P1 = P2 / S2";
         tips+="<br /";
@@ -322,11 +357,13 @@ function HERNY()
         
     }
     else if(P1  == "x" || P1 =="X" || P1 =="?")
-    {
-        reslt= ( S2 * P1 ) / S2;;
+    {    var s1 = parseFloat(S1);
+         var p2 = parseFloat(P2);
+         var d2 = parseFloat(S2);
+          reslt= (p2*s1)/d2;
         reslt+= "<br /";
-        tips = "P1 / S1 = S2 / P2";
-        tips+="<br /";
+        tips = "S1 / P1 = S2 / P2";
+        tips+="<br />";
         tips+="P1 = (P2 * S1) / S2 "+"<br />";
         tips+= "P1 = "+"("+P2+" * "+ S1+")  / "+S2;
          document.getElementById("tips7").innerHTML= tips;
@@ -335,7 +372,10 @@ function HERNY()
     }
     else if(P2  == "x" || P2 =="X" || P2 =="?")
     {
-        reslt= ( P1 * S2 ) / S1;;
+        var p1 = parseFloat(P1);
+        var s1 =parseFloat(S1);
+         var s2 = parseFloat(S2);
+        reslt= ( p1 * s2 ) / s1;;
         reslt+= "<br /";
         tips = "S1 / P1 = S2 / P2";
         tips+="<br /";
