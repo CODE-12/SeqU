@@ -1,13 +1,15 @@
 function KW()
 {
-    var pH = parseFloat(document.getElementById("H").value);
-    var pOH = parseFloat(document.getElementById("OH").value);
-    var Kw = parseFloat(document.getElementById("kw").value);
-    var result; var tips ="";
+    var pH = document.getElementById("H").value;
+    var pOH = document.getElementById("OH").value;
+    var Kw = document.getElementById("kw").value;
+    var result;  var tips ="";
     
-    if(Kw=="0.0"){
+    if(Kw=="?"||Kw=="x"||Kw=="X"){
         
-       result=pH*pOH+"<br />";
+        var ppH = parseFloat(pH);
+    var ppOH = parseFloat(pOH);
+       result=ppH*ppOH+"<br />";
        tips+="Kw = [pOH][pH]"+"<br />"+"Kw = "+"["+pOH+"]"+"["+pH+"]";
      document.getElementById("result").innerHTML=result;
       document.getElementById("tips").innerHTML=tips;
@@ -15,17 +17,21 @@ function KW()
                  }
     
     
-    else if(pH=="0.0"){
+    else if(pH=="?"||pH=="x"||pH=="X"){
         
-        result=Kw/pOH+"<br />";
+           var kw = parseFloat(Kw);
+    var ppOH = parseFloat(pOH);
+        result=kw/ppOH+"<br />";
         tips+="Kw = [pOH][pH]"+"<br />"+"pH = [Kw] / [pOH]"+"<br />"+"pH = "+"["+Kw+"]"+" / "+"["+pOH+"]";
         document.getElementById("result").innerHTML=result;
         document.getElementById("tips").innerHTML=tips;
         
                  }
-    else if(pOH=="0.0"){
-        result=Kw/pOH+"<br />";
-        tips+="Kw = [pOH][pH]"+"<br />"+"pOH = [Kw] / [pH]"+"<br />"+"pOH = "+"["+Kw+"]"+" / "+"["+pH+"]";
+    else if(pOH=="?"||pOH=="x"||pOH=="X"){
+           var poH = parseFloat(pH);
+    var kw = parseFloat(Kw);
+        result=kw/poH+"<br />";
+        tips+="Kw = [pOH][pH]"+"<br/>"+"pOH = [Kw] / [pH]"+"<br />"+"pOH = "+"["+Kw+"]"+" / "+"["+pH+"]";
          document.getElementById("result").innerHTML=result;
         document.getElementById("tips").innerHTML=tips;
     
@@ -33,53 +39,64 @@ function KW()
 }
 function PH(){
     
-    var pH = parseFloat(document.getElementById("pH").value);
-    var H = parseFloat(document.getElementById("trkez1").value);
+    var pH = document.getElementById("pH").value;
+    var H = document.getElementById("trkez1").value;
     var result ;
     var tips="";
     
-    if(pH == "0.0"){ 
+    if(pH=="?"||pH=="x"||pH=="X"){ 
+                var h = parseFloat(H);
+
         
-        result =Math.log10(H);result*=-1;
+        result =Math.log10(h);result*=-1;
         tips+="pH = - log[H] "+"<br />"+"pH = - log("+H+")"
         document.getElementById("result1").innerHTML=result;
         document.getElementById("tips1").innerHTML=tips;    
     
     }
     
-       else if(H == "0.0"){
-        result = Math.pow(10,-pH);
-        tips+="[H] = 10^-pH "+"<br />"+"[pH] = 10^ -"+pH;
+       else if(H=="?"||H=="x"||H=="X"){
+           
+            var ppH = parseFloat(pH);
+        result = Math.pow(10,-ppH);
+        tips+="[H] = 10^-pH "+"<br />"+"[H] = 10^ -"+pH;
         document.getElementById("result1").innerHTML=result;
         document.getElementById("tips1").innerHTML=tips;}
 }
 function POH(){
     
-    var pOH = parseFloat(document.getElementById("pOH").value);
-    var OH = parseFloat(document.getElementById("trkez2").value);
+    var pOH = document.getElementById("pOH").value;
+    var OH = document.getElementById("trkez3").value;
     var result ;
     var tips ="";
-    
-    if(pOH == "0.0"){
-        result =Math.log10(OH);result*=-1;
+    if(pOH=="?"||pOH=="x"||pOH=="X"){
+             var oh = parseFloat(OH);
+
+        result =Math.log10(oh);result*=-1;
         tips+="pOH = - log[H] "+"<br />"+"pOH = - log("+OH+")";
             document.getElementById("result2").innerHTML=result;
         document.getElementById("tips2").innerHTML=tips; 
     }
-       else if(OH == "0.0"){ result =Math.pow(10,-pOH);tips="[OH] = 10^-pOH "+"<br />"+"[pOH] = 10^ -"+pOH;
+       else if(OH=="?"||OH=="x"||OH=="X"){
+           var poH = parseFloat(pOH);
+           result =Math.pow(10,-poH);tips="[OH] = 10^-pOH "+"<br />"+"[OH] = 10^ -"+pOH;
       document.getElementById("result2").innerHTML=result;document.getElementById("tips2").innerHTML=tips;}
 }
 function _ppOh(){
-    var pH = parseFloat(document.getElementById("h").value);
-    var pOH = parseFloat(document.getElementById("oH").value);
+    var pH = document.getElementById("h").value;
+    var pOH = document.getElementById("oH").value;
     var result;
     var tips =""; 
-                  if(pH =="0.0"){result=14 - pOH;
+                  if(pH=="?"||pH=="x"||pH=="X"){
+                       var poH = parseFloat(pOH);
+                      result=14 - poH;
                   tips+=" 14.00 = pH+pOH"+"<br />"+"pH = 14.00 - pOH"+"<br />"+"pH = 14.00 - "+pOH;
                                  document.getElementById("result3").innerHTML=result;
                                  document.getElementById("tips3").innerHTML=tips;}
-                else if(pOH =="0.0"){
-                    result=14 - pH;
+                else if(pOH=="?"||pOH=="x"||pOH=="X"){
+                     var ppH = parseFloat(pH);
+                    
+                    result=14 - ppH;
                     tips+=" 14.00 = pH+pOH"+"<br />"+"pOH = 14.00 - pH"+"<br />"+"pOH = 14.00 - "+pH ;
                     document.getElementById("result3").innerHTML=result;
                     document.getElementById("tips3").innerHTML=tips;}
@@ -87,4 +104,4 @@ function _ppOh(){
 
 
 }
-function F(){alert("11D")}
+function F(){}

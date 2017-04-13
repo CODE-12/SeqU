@@ -1,27 +1,31 @@
  function k()
 { 
-     var k1 =parseFloat(document.getElementById("KM").value);
-    var k2 =parseFloat(document.getElementById("kTh").value);
-    var k3 =parseFloat(document.getElementById("kMh").value);
+     var k1 =document.getElementById("KM").value;
+    var k2 =document.getElementById("kTh").value;
+    var k3 =document.getElementById("kMh").value;
     var reslt ;
      var tips ="" ;
-    if(k1 == "0.0")
+    if(k1  == "x" || k1 =="X" || k1 =="?")
     {
-        reslt= (k2*100)/k3;
+        var K2 =parseFloat(k2);var K3 =parseFloat(k3);
+        reslt= (K2*100)/K3;
         
          document.getElementById("result").innerHTML= reslt; 
         
     }
-    else if(k2 == "0.0")
+    else if(k2  == "x" || k2 =="X" || k2 =="?")
     {
-         reslt= (k1*k3)/100;
+                var K1 =parseFloat(k1);var K3 =parseFloat(k3);
+
+         reslt= (K1*K3)/100;
         
          document.getElementById("result").innerHTML= reslt; 
         
     }
-    else if(k3 == "0.0")
-    {
-       reslt= (k2*100)/k1;
+    else if(k3  == "x" || k3 =="X" || k3 =="?")
+    {        var K2 =parseFloat(k2);var K1 =parseFloat(k1);
+
+       reslt= (K2*100)/K1;
         
          document.getElementById("result").innerHTML= reslt; 
         
@@ -30,30 +34,30 @@
      
 }
  function g()
-{ 
-     var k1 =parseFloat(document.getElementById("KM1").value);
-    var k2 =parseFloat(document.getElementById("kTh1").value);
-    var k3 =parseFloat(document.getElementById("kMh1").value);
-    var reslt ;
+{  var k1 =document.getElementById("KM1").value;
+    var k2 =document.getElementById("kTh1").value;
+    var k3 =document.getElementById("kMh1").value;
      var tips ;
-    if(k1 == "0.0")
+    if(k1  == "x" || k1 =="X" || k1 =="?")
     {
-        reslt= (k2*100)/k3;
+       var K2 =parseFloat(k2);var K3 =parseFloat(k3);
+        reslt= (K2*100)/K3;
+         document.getElementById("result1").innerHTML= reslt; 
+        
+    }
+    else if(k2  == "x" || k2 =="X" || k2 =="?")
+    {var K1 =parseFloat(k1);var K3 =parseFloat(k3);
+
+         reslt= (K1*K3)/100;
         
          document.getElementById("result1").innerHTML= reslt; 
         
     }
-    else if(k2 == "0.0")
+    else if(k3  == "x" || k3 =="X" || k3 =="?")
     {
-         reslt= (k1*k3)/100;
-        
-         document.getElementById("result1").innerHTML= reslt; 
-        
-    }
-    else if(k3 == "0.0")
-    {
-       reslt= (k2*100)/k1;
-        
+       var K2 =parseFloat(k2);var K1 =parseFloat(k1);
+               reslt= (K2*100)/K1;
+
          document.getElementById("result1").innerHTML= reslt; 
         
     }
@@ -67,21 +71,21 @@ function mlar()
     var m3 =parseFloat(document.getElementById("kMh2").value);
     var reslt ;
      var tips="";
-    if(m1 == "0.0")
+    if(m1  == "x" || m1 =="X" || m1 =="?")
     {
         reslt= (m2)/m3;
         
          document.getElementById("result2").innerHTML= reslt; 
         
     }
-    else if(m2 == "0.0")
+    else if(m2  == "x" || m2 =="X" || m2 =="?")
     {
          reslt= (m1*m3);
         
          document.getElementById("result1").innerHTML= reslt; 
         
     }
-    else if(m3 == "0.0")
+    else if(m3  == "x" || m2 =="X" || m2 =="?")
     {
        reslt= (m2)/m1;
         
@@ -98,21 +102,21 @@ function mlor()
     var m3 =parseFloat(document.getElementById("kMh3").value);
     var reslt ;
      
-    if(m1 == "0.0")
+    if(m1  == "x" || m1 =="X" || m1 =="?")
     {
         reslt= (m2)/m3;
         
          document.getElementById("result3").innerHTML= reslt; 
         
     }
-    else if(m2 == "0.0")
+    else if(m2  == "x" || m2 =="X" || m2 =="?")
     {
          reslt= (m1*m3);
         
          document.getElementById("result3").innerHTML= reslt; 
         
     }
-    else if(m3 == "0.0")
+    else if(m3  == "x" || m3 =="X" || m3 =="?")
     {
        reslt= (m2)/m1;
         
@@ -130,7 +134,7 @@ function T7FEF()
     var V2 =parseFloat(document.getElementById("v2").value);
     var reslt ;
      var tips ;
-    if(M1=="0.0")
+    if(M1== "x"||  M1=="X" ||  M1=="?")
         {
             
             reslt = (V2 / V1) * M2;
@@ -143,7 +147,7 @@ function T7FEF()
             document.getElementById("tips4").innerHTML= tips;
             document.getElementById("result4").innerHTML= reslt; 
         }
-    else if(M2=="0.0")
+    else if(M2== "x"||  M2=="X" ||  M2=="?")
         {
             
             reslt = (V1 / V2) * M1;
@@ -156,7 +160,7 @@ function T7FEF()
             document.getElementById("tips4").innerHTML= tips;
             document.getElementById("result4").innerHTML= reslt; 
         }
-    else if(V1=="0.0")
+    else if(V1== "x"||  V1=="X" ||  V1=="?")
         {
             
             reslt = (M2 / M1) * V2;
@@ -171,7 +175,7 @@ function T7FEF()
             
         }
     
-    else if(V2=="0.0")
+    else if(V2== "x"||  V2=="X" ||  V2=="?")
         {
             
             reslt = (M1 / M2) * V1;
@@ -194,7 +198,7 @@ function ARTF3()
     var M =parseFloat(document.getElementById("M1").value);
     var reslt ;
      var tips ;
-    if(TF=="0.0")
+    if(TF== "x"||  TF=="X" ||  TF=="?")
         {
             
             reslt = BF * M;
@@ -207,7 +211,7 @@ function ARTF3()
             document.getElementById("tips5").innerHTML= tips;
             document.getElementById("result5").innerHTML= reslt; 
         }
-    else if(BF=="0.0")
+    else if(BF== "x"||  BF=="X" ||  BF=="?")
         {
            reslt = M / TF;
             tips   = "Tf = Bf M"
@@ -219,7 +223,7 @@ function ARTF3()
             document.getElementById("tips5").innerHTML= tips;
             document.getElementById("result5").innerHTML= reslt; 
         }
-    else if(M=="0.0")
+    else if(M== "x"||  M=="X" ||  M=="?")
         {
             
             reslt = BF / TF;
@@ -242,7 +246,7 @@ function AN7FATH()
     var M =parseFloat(document.getElementById("M2").value);
     var reslt ;
      var tips ;
-    if(TF=="0.0")
+    if(TF== "x"||  TF=="X" ||  TF=="?")
         {
             
             reslt = BF * M;
@@ -255,7 +259,7 @@ function AN7FATH()
             document.getElementById("tips6").innerHTML= tips;
             document.getElementById("result6").innerHTML= reslt; 
         }
-    else if(BF=="0.0")
+    else if(BF== "x"||  BF=="X" ||  BF=="?")
         {
            reslt = M / TF;
             tips   = "Tf = Bf M"
@@ -267,7 +271,7 @@ function AN7FATH()
             document.getElementById("tips6").innerHTML= tips;
             document.getElementById("result6").innerHTML= reslt; 
         }
-    else if(M=="0.0")
+    else if( M == "x"||  M =="X" ||  M == "?")
         {
             
             reslt = BF / TF;
@@ -293,7 +297,7 @@ function HERNY()
     var S2 =parseFloat(document.getElementById("s2").value);
     var reslt ;
      var tips ;
-    if(S1 == "0.0")
+    if(S1  == "x" || S1 == "X" || S1 == "?")
     {
         reslt= (P1*S2)/P2;
         reslt+= "<br /";
@@ -305,7 +309,7 @@ function HERNY()
          document.getElementById("result7").innerHTML= reslt; 
         
     }
-    else if(S2 == "0.0")
+    else if(S2  == "x" || S2 =="X" || S2 =="?")
     {
         reslt= (P2*S1)/P1;
         reslt+= "<br /";
@@ -317,25 +321,25 @@ function HERNY()
          document.getElementById("result7").innerHTML= reslt; 
         
     }
-    else if(P1 == "0.0")
+    else if(P1  == "x" || P1 =="X" || P1 =="?")
     {
         reslt= ( S2 * P1 ) / S2;;
         reslt+= "<br /";
         tips = "P1 / S1 = S2 / P2";
         tips+="<br /";
-        tips+="S1 = (P2 * S1) / S2 "+"<br />";
-        tips+= "T1 = "+"("+P2+" * "+ S1+")  / "+S2;
+        tips+="P1 = (P2 * S1) / S2 "+"<br />";
+        tips+= "P1 = "+"("+P2+" * "+ S1+")  / "+S2;
          document.getElementById("tips7").innerHTML= tips;
          document.getElementById("result7").innerHTML= reslt; 
         
     }
-    else if(P2 == "0.0")
+    else if(P2  == "x" || P2 =="X" || P2 =="?")
     {
         reslt= ( P1 * S2 ) / S1;;
         reslt+= "<br /";
         tips = "S1 / P1 = S2 / P2";
         tips+="<br /";
-        tips+="S1 = (P1 * S2) / S1 "+"<br />";
+        tips+="P2 = (P1 * S2) / S1 "+"<br />";
         tips+= "P2 = "+"("+P1+" * "+ S2+")  / "+S1;
          document.getElementById("tips7").innerHTML= tips;
          document.getElementById("result7").innerHTML= reslt; 
@@ -369,7 +373,7 @@ function KSER()
         reslt+= "<br /";
         tips = "X = nx / na +nb";
         tips+="<br /";
-        tips+="X = (A) / B + B "+"<br />";
+        tips+="X = (B) / A + B "+"<br />";
         tips+= "X = "+"("+B+")  /  "+A+"+"+B;
          document.getElementById("tips8").innerHTML= tips;
          document.getElementById("result8").innerHTML= reslt; 
