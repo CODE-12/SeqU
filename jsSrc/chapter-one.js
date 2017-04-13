@@ -167,10 +167,10 @@ function Lusac()
             var t1 =parseFloat(T1);
         reslt= (p2*t1)/p1;
         reslt+= "<br />";
-        tips += "P1 / T1 = V2 / P2";
+        tips+= "P1 / T1 = V2 / P2";
         tips+="<br />";
-        tips+="T1 = (P2 * T1) / P1 "+"<br />";
-        tips+= "T1 = "+"("+P2+" * "+ T1+")  / "+P1;
+        tips+="T2 = (P2 * T1) / P1 "+"<br />";
+        tips+= "T2 = "+"("+P2+" * "+ T1+")  / "+P1;
          document.getElementById("tips3").innerHTML= tips;
             document.getElementById("result3").innerHTML= reslt; 
         
@@ -434,9 +434,9 @@ function Density()
     var R = 0.0821;
     var reslt;
     var tips = ""; 
-    
-    if (D=="X"|| D == "x" || D=="?")
-        {
+
+    if (D =="X"|| D == "x" || D =="?")
+        {    alert("hhhh");
             var m =parseFloat(M);
             var p =parseFloat(P);
             var t =parseFloat(T);
