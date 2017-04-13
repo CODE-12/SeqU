@@ -60,7 +60,7 @@ body, html {
 
 .parallax {
     /* The image used */
-    background-image: url(../img/Website-Design-Background.png);
+    background-image: url(../style/img/Website-Design-Background.png);
 
     /* Full height */
     height: 100%; 

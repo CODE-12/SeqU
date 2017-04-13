@@ -4,9 +4,9 @@
 
 .bgh {
     /* The image used */
-    background-image: url(../img/chemistry-background-ppt-0.jpg);
+    background-image: url(img/chemistry-background-ppt-0.jpg);
     /* Full height */
-    height: 100%;
+    height: auto;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
