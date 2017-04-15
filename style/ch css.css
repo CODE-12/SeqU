@@ -4,13 +4,13 @@
 
 .bgh {
     /* The image used */
-    background-image: url(img/chemistry-background-ppt-0.jpg);
+    background-image: url(img/Website-Design-Background.png);
     /* Full height */
     height: auto;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -21,4 +21,22 @@
     .bgh {
         background-attachment: scroll;
     }
+}
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #000000;
+  text-align: center;
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
