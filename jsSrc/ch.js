@@ -9,12 +9,12 @@ function tl(){
             break;
             
             case 2:
-            window.location.href="phs.html";
+            window.location.href="ph20.html";
             
             break;
             
             case 3:
-            window.location.href="phs.html";
+            window.location.href="ph3.html";
             
             break;
             
