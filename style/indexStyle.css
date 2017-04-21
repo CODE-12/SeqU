@@ -30,11 +30,17 @@ footer p {
     margin: 0px;
     line-height: 100%;
 }
-td:hover{
+#td2:hover{
     cursor: pointer;
-    background-color:rgba(192,192,192,0.3);
+    background-color:rgba(0, 91, 148,0.3);
     border-radius: 100px;
-   transition: 0.8s;
+   transition: 1s;
+}
+#td1:hover{
+    cursor: pointer;
+    background-color:rgba(226, 240, 33,0.3);
+    border-radius: 100px;
+   transition: 1s;
 }
 .footer {
   position: absolute;
