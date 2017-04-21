@@ -60,16 +60,13 @@ body, html {
 
 .parallax {
     /* The image used */
-    background: url(img/Website-Design-Background.png) ;
+    background: rgb(30, 30, 30) ;
 
     /* Full height */
     height: 100%; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+   
 }
 .test{ opacity: 0.5;
     filter: alpha(opacity=50);}

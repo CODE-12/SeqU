@@ -82,15 +82,8 @@
 }
 
 .hg {
-    /* The image used */
-    background-image: url(img/artsfon.com-68396.jpg);
-    /* Full height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+   background: rgb(30, 30, 30);
+       
 }
 
 

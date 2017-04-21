@@ -62,9 +62,9 @@ function P()
             reslt = (p1 / p2) * v1;
              tips   = "P1 V1 = P2 V2 "
             tips  += "<br /> ";
-            tips  += "V1 = (P1 / P2) * V1 ";
+            tips  += "V2 = (P1 / P2) * V1 ";
             tips  += "<br />";
-            tips  += "V1 = "+"("+p1+" / "+p2+") "+" * "+v1;
+            tips  += "V2 = "+"("+p1+" / "+p2+") "+" * "+v1;
             reslt += "<br />";
             document.getElementById("tips2").innerHTML= tips;
             document.getElementById("result2").innerHTML= reslt; 
@@ -96,20 +96,7 @@ function S()
        document.getElementById("result1").innerHTML= reslt; 
       
     }
-    else if( T2=="X"|| T2 == "x" || T2=="?")
-    {
-            var t1 =parseFloat(T1);
-            var v1 =parseFloat(V1);
-            var v2 =parseFloat(V2);
-        reslt= (v2*t1)/V1;
-        reslt+= "<br />";
-        tips += "V1 / T1 = V2 / T2";
-        tips+="<br />";
-        tips+="T2 = (V2 * T1) / V1 "+"<br />";
-        tips+= "T2 = "+"("+V2+" * "+ T1+")  / "+V1;
-          document.getElementById("tips1").innerHTML= tips;
-            document.getElementById("result1").innerHTML= reslt; 
-    }
+  
     else if( V1=="X"|| V1 == "x" || V1=="?")
     { 
         var t1 =parseFloat(T1);
@@ -136,6 +123,20 @@ function S()
          document.getElementById("tips1").innerHTML= tips;
             document.getElementById("result1").innerHTML= reslt; 
         
+    }
+      else if( T2=="X"|| T2 == "x" || T2=="?")
+    {
+            var t1 =parseFloat(T1);
+            var v1 =parseFloat(V1);
+            var v2 =parseFloat(V2);
+        reslt= (v2*t1)/V1;
+        reslt+= "<br />";
+        tips += "V1 / T1 = V2 / T2";
+        tips+="<br />";
+        tips+="T2 = (V2 * T1) / V1 "+"<br />";
+        tips+= "T2 = "+"("+V2+" * "+ T1+")  / "+V1;
+          document.getElementById("tips1").innerHTML= tips;
+            document.getElementById("result1").innerHTML= reslt; 
     }
      
 }
@@ -184,8 +185,8 @@ function Lusac()
         reslt+= "<br />";
         tips += "P1 / T1 = P2 / T2";
         tips+="<br />";
-        tips+="T1 = (P2 * T1) / T2 "+"<br />";
-        tips+= "T1 = "+"("+P2+" * "+ T1+")  / "+T2;
+        tips+="P1 = (P2 * T1) / T2 "+"<br />";
+        tips+= "P1 = "+"("+P2+" * "+ T1+")  / "+T2;
          document.getElementById("tips3").innerHTML= tips;
             document.getElementById("result3").innerHTML= reslt; 
         
@@ -198,8 +199,8 @@ function Lusac()
         reslt+= "<br />";
         tips += "P1 / T1 = P2 / T2";
         tips+="<br />";
-        tips+="T1 = (P1 * T2) / T1 "+"<br />";
-        tips+= "T1 = "+"("+P1+" * "+ T2+")  / "+T1;
+        tips+="P2 = (P1 * T2) / T1 "+"<br />";
+        tips+= "P2 = "+"("+P1+" * "+ T2+")  / "+T1;
          document.getElementById("tips3").innerHTML= tips;
             document.getElementById("result3").innerHTML= reslt; 
         
@@ -269,12 +270,12 @@ function publicc()
      }
  else if( P2=="X"|| P2 == "x" || P2=="?")
      {
-         var t2 =parseFloat(T2);
+         var t1 =parseFloat(T1);
             var v1 =parseFloat(V1);
             var t2 =parseFloat(T2);
           var v2 =parseFloat(V2);
             var p1 =parseFloat(P1);
-          reslt= p1 * (v1/ v2) * (t2 / t1);
+          reslt= p1 * (v1+ v2) * (t2 + t1);
          reslt+= "<br />";
          tips += "P1 V1 / T1 = P2 V2 / T2";
          tips+="<br />";
@@ -285,7 +286,7 @@ function publicc()
      }
  else if( V2=="X"|| V2 == "x" || V2=="?")
      {
-         var t2 =parseFloat(T2);
+         var t1 =parseFloat(T1);
             var v1 =parseFloat(V1);
             var t2 =parseFloat(T2);
           var p1 =parseFloat(P1);
@@ -304,7 +305,7 @@ function publicc()
      {
          var p1 =parseFloat(P1);
             var v1 =parseFloat(V1);
-            var t2 =parseFloat(T2);
+            var t1 =parseFloat(T1);
           var v2 =parseFloat(V2);
             var p2 =parseFloat(P2);
           reslt= t1 * (p2 /p1) * (v2 / v1);
@@ -405,8 +406,8 @@ function perfect()
         tips= "PV = nRT"+"<br />";
         tips +="n = PV / RT "+"<br />";
         tips += "n = "+P+" * "+V+" / "+R+" * "+T;
-        reslt = (P*V) / (R*T);
-        reslt ="<br />";
+        reslt = (v * p) / (R*t);
+        reslt +="<br />";
      document.getElementById("tips4").innerHTML= tips;
             document.getElementById("result4").innerHTML= reslt; 
        }
@@ -429,14 +430,14 @@ function Density()
 {
     var P =document.getElementById("PP").value;
     var M =document.getElementById("MM").value;
-    var D =document.getElementById("D").valu;
+    var D =document.getElementById("D").value;
     var T =document.getElementById("TT").value;
     var R = 0.0821;
     var reslt;
     var tips = ""; 
 
     if (D =="X"|| D == "x" || D =="?")
-        {    alert("hhhh");
+        {  
             var m =parseFloat(M);
             var p =parseFloat(P);
             var t =parseFloat(T);
@@ -448,7 +449,7 @@ function Density()
         }
     else  if (T=="X"|| T == "x" || T=="?" )
         {
-             var m =parseFloat(M);
+            var m =parseFloat(M);
             var p =parseFloat(P);
             var d =parseFloat(D);
             tips= "D = MP / RT"+"<br />"+"T = MP / RD "+"<br />"+"T = "+M+" * "+P+" / "+R+" * "+D;
