@@ -90,7 +90,7 @@ function mlar()
          document.getElementById("result2").innerHTML= reslt; 
         
     }
-    else if(m3  == "x" || m2 =="X" || m2 =="?")
+    else if(m3  == "x" || m3 =="X" || m3 =="?")
     { var M2 =parseFloat(m2);
         var M1 =parseFloat(m1);
        reslt= (M2)/M1;
@@ -397,7 +397,7 @@ function KSER()
      var tips ;
     if(X == "A")
     {
-        reslt= (A)/A+B;
+        reslt= (A)/(A+B);
         reslt+= "<br /";
         tips = "X = nx / na +nb";
         tips+="<br /";
@@ -409,7 +409,7 @@ function KSER()
     }
     else if(X == "B")
     {
-        reslt= (B)/A+B;
+        reslt= (B)/(A+B);
         reslt+= "<br /";
         tips = "X = nx / na +nb";
         tips+="<br /";
