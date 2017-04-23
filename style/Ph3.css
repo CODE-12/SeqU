@@ -1,16 +1,16 @@
-#result {
+.result {
     width: 200px;
     height: 20px;
-
     bottom: 10px;
     left: 50px;
     background-color: #e3e8f2;
+    border: none;    
 }
 
 .buttom {
     width: 210px;
     height: 30px;
-    background-color: #e3e8f2;
+    background-color: #3c3c3c;
     text-align: center;
 }
 

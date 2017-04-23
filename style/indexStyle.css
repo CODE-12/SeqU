@@ -35,12 +35,14 @@ footer p {
     background-color:rgba(0, 91, 148,0.3);
     border-radius: 100px;
    transition: 1s;
+    color: rgba(226, 240, 33,0.3);
 }
 #td1:hover{
     cursor: pointer;
     background-color:rgba(226, 240, 33,0.3);
     border-radius: 100px;
    transition: 1s;
+    color:rgba(0, 91, 148,0.3);
 }
 .footer {
   position: absolute;
@@ -66,7 +68,7 @@ body, html {
 
 .parallax {
     /* The image used */
-    background: rgb(30, 30, 30) ;
+    background: #fff ;
 
     /* Full height */
     height: 100%; 
@@ -83,3 +85,5 @@ body, html {
         background-attachment: scroll;
     }
 }
+#S-g{color: #34A853}
+#S-p{color: #6f00de}
