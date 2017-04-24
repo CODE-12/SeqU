@@ -1,5 +1,4 @@
 
-
 a:link {
     text-decoration: none;
 }
@@ -55,7 +54,7 @@ footer p {
 }
 #color-g{
 background-color: #808080;
-    height: 1٥0px;
+    height: 100px;
     font-size: 36px;
 }
 table {margin: auto;}
@@ -68,7 +67,7 @@ body, html {
 
 .parallax {
     /* The image used */
-    background: #fff ;
+    background: #222 ;
 
     /* Full height */
     height: 100%; 
